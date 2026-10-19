@@ -1,0 +1,37 @@
+[
+ {
+  "date": "2026-10-19",
+  "video": "you-start-to-become-strong.mp4",
+  "title": "You Start To Become Strong",
+  "scenes": [
+   {
+    "template": "custom:gym_enter",
+    "caption": "A skinny guy walked into the gym. / Everyone was stronger."
+   },
+   {
+    "template": "custom:bar_wont_move",
+    "caption": "He tried the heavy bar. / It didn't move."
+   },
+   {
+    "template": "custom:effortless_others",
+    "caption": "They made it look effortless. / He headed for the exit."
+   },
+   {
+    "template": "custom:tiny_dumbbell",
+    "caption": "Then he noticed a tiny dumbbell. / Almost embarrassingly easy."
+   },
+   {
+    "template": "custom:days_montage",
+    "caption": "So he came back. / A little heavier every time."
+   },
+   {
+    "template": "custom:same_bar_lift",
+    "caption": "The same bar. One deep breath. / Nobody cheered. He simply smiled."
+   },
+   {
+    "template": "custom:final_message",
+    "caption": "YOU DON'T HAVE TO BE STRONG TO START. / YOU START TO BECOME STRONG."
+   }
+  ]
+ }
+]
