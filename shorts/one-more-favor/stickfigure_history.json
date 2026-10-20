@@ -1,0 +1,33 @@
+[
+ {
+  "date": "2026-10-20",
+  "video": "one-more-favor.mp4",
+  "title": "One More Favor",
+  "scenes": [
+   {
+    "template": "custom:face_box_hook",
+    "caption": "One more favor. / He could barely stand."
+   },
+   {
+    "template": "custom:pass_the_bench",
+    "caption": "He needed a break. / But he kept saying yes."
+   },
+   {
+    "template": "custom:offered_another",
+    "caption": "Even when he was exhausted."
+   },
+   {
+    "template": "custom:noticed_cost",
+    "caption": "This time, he noticed / what it was costing him."
+   },
+   {
+    "template": "custom:let_them_be",
+    "caption": "They weren't happy. / He let them be disappointed."
+   },
+   {
+    "template": "custom:bench_rest",
+    "caption": "He finally gave himself a break. / YOU'RE ALLOWED TO HAVE LIMITS."
+   }
+  ]
+ }
+]
