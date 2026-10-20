@@ -1,0 +1,45 @@
+[
+ {
+  "date": "2026-10-20",
+  "video": "keep-going.mp4",
+  "title": "Keep Going",
+  "scenes": [
+   {
+    "template": "custom:sign_stumble_hook",
+    "caption": "The sign said he was close. / All he could see was more road."
+   },
+   {
+    "template": "custom:falls_twice",
+    "caption": "His legs began to shake. / He fell. Got up. Fell again."
+   },
+   {
+    "template": "custom:ready_to_give_up",
+    "caption": "Defeated, he sat down. / Ready to give up."
+   },
+   {
+    "template": "custom:crane_reveal",
+    "caption": "Just beyond the hill... / He had no idea how close he was."
+   },
+   {
+    "template": "custom:trembling_hands",
+    "caption": "He looked at his trembling hands. / Then slowly pushed himself up."
+   },
+   {
+    "template": "custom:one_step_then_another",
+    "caption": "This time, he didn't run. / One step. Then another..."
+   },
+   {
+    "template": "custom:smile_and_cross",
+    "caption": "There it was. / He smiled."
+   },
+   {
+    "template": "custom:pull_away",
+    "caption": ""
+   },
+   {
+    "template": "custom:keep_going_card",
+    "caption": "YOU CAN'T ALWAYS SEE HOW CLOSE YOU ARE. / KEEP GOING."
+   }
+  ]
+ }
+]
