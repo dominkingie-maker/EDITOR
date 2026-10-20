@@ -125,7 +125,7 @@ def chime(f1, f2):      # gentle two-note completion
 CUES = [(FOUR, knock(), -14, "the '4' pulses on 'four'")]
 for (k, _, _), f in zip(CHIPS, (1200, 1350, 1100, 1500, 1300)):
     CUES.append((CHIP_T[k] + 0.07, tap(f), -15, f"chip '{k}' lands"))
-CUES.append((TO_TRACKER - 0.1, whoosh(), -20, "chips fly up into the tracker"))
+CUES.append((TO_TRACKER - 0.1, whoosh(), -20, "chips clear, tracker drops in"))
 for (k, t), f in zip(CHECKS.items(), (523.3, 587.3, 659.3, 698.5, 784.0)):
     CUES.append((t + 0.08, tick(f), -16, f"'{k}' checked"))
 CUES.append((ALL_DONE + 0.1, chime(784.0, 1046.5), -19, "all five protected"))
@@ -210,11 +210,12 @@ add(f"tl.fromTo('#hook-line',{{scaleX:0}},{{scaleX:1,duration:.5,ease:'power3.ou
 for k, _, _ in CHIPS:
     add(f"tl.fromTo('#chip-{k}',{{opacity:0,x:-60,scale:.92}},{{opacity:1,x:0,scale:1,duration:.32,ease:'back.out(1.8)'}},{CHIP_T[k]});")
 # chips fly into the top tracker; hook card content swaps
-add(f"tl.to('.chip',{{y:-1000,scale:.35,opacity:0,duration:.5,ease:'power3.in',stagger:.04}},{TO_TRACKER - 0.2});")
+# chips shrink away in place (flying them up would cross her face), the slots drop in from above
+add(f"tl.to('.chip',{{y:-30,scale:.8,opacity:0,duration:.3,ease:'power2.in',stagger:.04}},{TO_TRACKER - 0.2});")
 add(f"tl.to('#hook-inner',{{opacity:0,y:-20,duration:.25}},{TO_TRACKER - 0.1});")
 add(f"tl.to('#topcard',{{height:196,duration:.35,ease:'power2.inOut'}},{TO_TRACKER - 0.1});")
 add(f"tl.fromTo('#tracker',{{opacity:0}},{{opacity:1,duration:.2}},{TO_TRACKER + 0.15});")
-add(f"tl.from('.slot',{{y:40,opacity:0,duration:.35,ease:'back.out(1.6)',stagger:.05}},{TO_TRACKER + 0.15});")
+add(f"tl.from('.slot',{{y:-40,opacity:0,duration:.35,ease:'back.out(1.6)',stagger:.05}},{TO_TRACKER + 0.15});")
 for k, t in CHECKS.items():
     add(f"tl.to('#slot-{k}',{{opacity:1,duration:.15}},{t});")
     add(f"tl.to('#slot-{k} .slot-ico',{{backgroundColor:'#FCD116',color:'#0b1626',duration:.18}},{t});")

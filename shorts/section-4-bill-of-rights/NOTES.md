@@ -36,6 +36,13 @@ python edit/build.py <project>               # SFX, mix, index.html, cue-sheet.j
 cd <project> && npx hyperframes render --quality high --output renders/final.mp4
 ```
 
+## Checks on the delivered file
+
+- 1080x1920, 30 fps, 53.43 s video and audio; -16.0 LUFS integrated, -1.4 dBFS peak.
+- Fresh transcription of the final mix contains every scripted word across all five pause cuts.
+- Frames inspected at every beat, plus a frame strip across the chip-to-tracker change: nothing
+  covers the mouth, and captions stay on the shirt.
+
 `align.py` places the first three words from a second pass (speech starts at 2.0 s; the first pass
 put "Hello" in the silent lead-in). `<project>` is a Herk Edit Kit video project with the raw
 recording at `assets/raw.mp4` (the raw footage is not committed).
