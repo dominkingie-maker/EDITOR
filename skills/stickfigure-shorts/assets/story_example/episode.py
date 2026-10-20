@@ -48,7 +48,7 @@ def s1_hook(duration=4.0):
         ctx.restore()
         darkness(ctx, 0.9 * pull)
         cap(ctx, t, "The sign said he was close.", "All he could see was more road.", 2.6)
-    return Scene(draw, duration, "custom:sign_stumble_hook", "The sign said he was close. / All he could see was more road.")
+    return Scene(draw, duration, "hook-sign-finish-line-ahead", "The sign said he was close. / All he could see was more road.")
 
 
 def s2_falls(duration=5.0):

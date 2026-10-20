@@ -140,6 +140,26 @@ class Score:
         """Cymbal-like wash for a payoff (crossing a line, a lift locking out)."""
         self._place(self.fx, t, self.filt(self.noise(dur), lo=3000) * np.exp(-self._t(dur) * 2.5), gain)
 
+    def hook_hit(self, t, kind="slam"):
+        """The sound of the hook, landing exactly on the visual hit at t (put it in EVERY score).
+        slam: whoosh into a heavy thud + low note · snap: short whoosh, punchy kick, shimmer ·
+        rewind: tape-stop sweep down ending at t (cold-open flash-forward)."""
+        if kind == "slam":
+            self.whoosh(max(0.0, t - 0.55), min(0.55, t), 0.2)
+            self.thud(t)
+            self.piano(t, 40, 2.6, 0.6)
+        elif kind == "snap":
+            self.whoosh(max(0.0, t - 0.3), min(0.3, t), 0.16)
+            self.kick(t, 1.2, 0.6, 45, 160)
+            self.shimmer(t, 1.0, 0.08)
+        elif kind == "rewind":
+            d = 0.45
+            tt = self._t(d)
+            f = 700 * np.exp(-tt / d * 2.4) + 40
+            sweep = np.sin(2 * np.pi * np.cumsum(f) / SR) * (1 - tt / d)
+            self._place(self.fx, t - d, sweep, 0.35)
+            self._place(self.fx, t - d, self.filt(self.noise(d), lo=800, hi=5000) * (1 - tt / d), 0.12)
+
     def duck(self, t0, t1, every=0.5, depth=0.35):
         """Sidechain the pads to a beat grid between t0 and t1 (pumping energy for a payoff section)."""
         t = np.arange(self.n) / SR

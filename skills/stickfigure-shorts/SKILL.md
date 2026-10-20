@@ -33,6 +33,16 @@ complete episode: `assets/story_example/`.
 `python3 SKILL_DIR/scripts/score.py music_score.py --out music.wav`, then pass `--music music.wav` to
 the engine (see story-mode.md §4 for the arc and the loudness check).
 
+## Every video opens with a very strong visual hook (both modes, mandatory)
+The first 1.5 s must stop the scroll: frame 0 already shows a clear subject **close up and moving**,
+a hard hit (impact, snap-out, spotlight slam, fall, reveal) lands at 0.4–0.8 s with a matching sound
+(`s.hook_hit(t, "slam" | "snap" | "rewind")`), and caption line 1 adds tension from t=0. Pick one of the
+10 hooks in **`references/hooks.md`** that fits this video's core tension and wasn't used in the last 3
+episodes; name the first scene `hook-<kind>-<what>`. Before the final render it must pass
+`python3 SKILL_DIR/scripts/hookcheck.py episode.py` (HOOK PASS) **and** the frame-0 thumbnail test
+(look at frame 0 alone: is there a subject, and is something about to happen?). A FAIL is never
+shipped — strengthen the opening and re-check.
+
 ## Setup (once per machine/session)
 
 ```bash
@@ -76,6 +86,8 @@ while still readable in one second with the sound off. Read `visual-ideas.md` it
 you want the full menu or the shot/motion vocabulary.
 
 Rules for every episode:
+- **Scene 1 is the hook** (see `references/hooks.md`): a custom hook scene, or the best-fitting scene
+  wrapped with `hooked(scene, focus=(x, y))` from `storykit` — focus on the figure or moving object.
 - **No template twice** in one episode, and **at most 3 template scenes**.
 - **At least 2 scenes custom-built** — from the shortlist, the ideas bank, or newly
   invented — using the props, poses and helpers in `references/custom-scenes.md`.
@@ -129,6 +141,10 @@ Open the PNG (one row per scene, 4 moments each) and check:
 - the accent colour appears only at payoffs
 - the six thumbnails in a row look different from each other — if two scenes look
   alike, swap one for a different shot or motion type
+
+Then check the hook: `python3 SKILL_DIR/scripts/hookcheck.py episode.py` must print HOOK PASS, and
+`python3 SKILL_DIR/scripts/contact.py episode.py 0,0.3,0.6,0.9,1.4 --out hook.png --cols 5` must show a
+subject on frame 0 and a visible hit by 0.8 s.
 
 For a closer look use `--frames 3.5,12.0 --outdir frames` (full-res PNGs). Fix and
 re-preview; it's seconds per iteration.

@@ -19,7 +19,7 @@ them exactly. Otherwise: hook 3–4 s, beats 3.5–6 s, final card 3.5–5 s; to
 - A continuous moment (holding a pose while two caption sets play; sitting, then the message) is one
   long scene with `cap(..., a=)` caption swaps, not two scenes with a fade between them.
 
-## 2. The hook (frame 0 decides everything)
+## 2. The hook (frame 0 decides everything) — full playbook in `references/hooks.md`
 Frame 0 shows **the subject, close, already moving**; a hit lands within 0.55–0.75 s. Pick a hook that
 belongs to this story and differs from the past episodes table in `story-recipes.md` §12:
 - **Impact**: a box slams onto a stack / knees hit the road → `impact()` shake + `flash()` + `dust()` +
@@ -27,7 +27,10 @@ belongs to this story and differs from the past episodes table in `story-recipes
 - **Readable world text**: a sign in close-up at zoom ≈ 2 ("FINISH LINE AHEAD →") as he stumbles past;
   pull back to the wide shot that contradicts it.
 - **Extreme close-up → reveal**: zoom 2.2–2.6 on a strained face, something drops over it, pull back.
-Never open on a title card, an empty frame or a static wide shot.
+Never open on a title card, an empty frame or a static wide shot. Seven more hook types (smash from
+black, sprint at camera, countdown, giant vs tiny, flash-forward with a rewind glitch, split contrast,
+mid-fall) are in `hooks.md`. Name the first scene `hook-<kind>-<what>`; put `s.hook_hit(t_hit, kind)`
+in the score.
 
 ## 3. Stage each beat to read in one second, sound off
 - **Gaze can't be drawn.** "He looks at X" = soft `halo` on X + lean/head drop + `head_dx` toward X.
@@ -72,7 +75,8 @@ python3 SKILL_DIR/scripts/contact.py episode.py 0,0.7,3,5.4,8.3,12.5,15.5,19.6,2
 Read the sheet. Times: frame 0, every impact, reveal, caption change, the end card. Check: the hook
 frame has motion and a subject; nothing he "can't see" shows early; held props sit in hands; feet on
 the ground line; nothing zoomed enters the caption band (`cam` clips at y=705 — keep it); captions
-fit; gold only at the payoff. Fix and re-check (seconds each), then:
+fit; gold only at the payoff. Then the hook gate: `python3 SKILL_DIR/scripts/hookcheck.py episode.py`
+must print HOOK PASS (never ship a FAIL). Fix and re-check (seconds each), then:
 ```bash
 python3 SKILL_DIR/scripts/engine.py episode.py --out short.mp4 --music music.wav
 ```

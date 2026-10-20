@@ -579,3 +579,99 @@ def title_lines(ctx, t, lines, size=54, y0=900, gap=72, accent_words=()):
         if text:
             words(ctx, text, y, t0, t, size=size, step=0.14, accent_words=accent_words)
         y += gap
+
+
+# ---------------------------------------------------------------- hooks (see references/hooks.md)
+def hooked(scene, focus=(540, 1140), z0=2.4, t_hit=0.6, flash_a=0.22, shake=9.0, creep=0.12):
+    """Turn ANY scene (a quote-mode template or a custom scene) into a slam-open hook.
+    Frame 0 starts zoomed z0 on `focus` and creeping closer (tension); at t_hit the frame snaps out to
+    normal framing with shake + flash (pair with score hook_hit(t_hit)). Captions drawn by the scene are
+    clipped away while zoomed and appear as the frame settles. Choose a focus where something is
+    already visible and moving at t=0 (the figure, the object), not empty space."""
+    from engine import Scene
+    inner = scene.draw
+
+    def draw(ctx, t):
+        imp = t - t_hit
+        z = z0 * (1 + creep * eio(t / t_hit)) if imp < 0 else 1 + (z0 * (1 + creep) - 1) * math.exp(-imp * 14)
+        ctx.save()
+        impact(ctx, imp, shake)
+        if z > 1.01:
+            ctx.rectangle(0, 705, 1080, 1215); ctx.clip()
+            ctx.translate(*focus); ctx.scale(z, z); ctx.translate(-focus[0], -focus[1])
+        inner(ctx, t)
+        ctx.restore()
+        flash(ctx, imp, flash_a)
+    return Scene(draw, scene.duration, "hook-slam+" + scene.name, scene.caption)
+
+
+def punch_zoom(t, t_hit, base=1.0, pre=0.05, post=0.10):
+    """Camera zoom for a custom hook: slow creep in before the hit, a punch after it."""
+    imp = t - t_hit
+    return base * (1 + pre * eio(t / t_hit)) if imp < 0 else base * (1 + post * math.exp(-5 * imp))
+
+
+def speed_lines(ctx, x, y, t, a=1.0, d=1, n=9, length=140, spread=150):
+    """Horizontal streaks trailing a figure moving in direction d (sprint / whip-pan hooks)."""
+    if a <= 0:
+        return
+    ctx.set_line_width(3)
+    for k in range(n):
+        yy = y - spread / 2 + spread * ((k * 0.618) % 1)
+        off = ((t * 900 + k * 97) % 260)
+        x0 = x - d * (40 + off)
+        ctx.new_path(); ctx.move_to(x0, yy); ctx.line_to(x0 - d * length * (0.5 + 0.5 * ((k * 0.37) % 1)), yy)
+        ctx.set_source_rgba(1, 1, 1, 0.35 * a * (1 - off / 260)); ctx.stroke()
+
+
+def spotlight_snap(ctx, x, top, ground, t, t_on, col=(1, 0.97, 0.9)):
+    """A spotlight that slams on at t_on with two flickers (smash-from-black hooks). Before t_on it is
+    already there as a dim, buzzing, flickering beam — frame 0 must never be black or still.
+    Returns the light level (≈0.3 before, 1 after) to dim everything outside it."""
+    from engine import beam
+    u = t - t_on
+    if u < 0:
+        lvl = 0.32 + 0.22 * math.sin(t * 47) * math.sin(t * 13)
+    elif u > 0.16:
+        lvl = 1.0
+    else:
+        lvl = 1.0 if (u < 0.04 or 0.09 < u < 0.12) else 0.25
+    beam(ctx, x, top, ground, lvl, col=col, top_w=30, bottom_w=190)
+    halo(ctx, x, ground - 120, 260, col=col, a=0.18 * lvl)
+    return lvl
+
+
+def rewind_glitch(ctx, t, t0, dur=0.5, seed=7):
+    """Tape-rewind tear over everything drawn so far (cold-open flash-forward → 'rewind' to the start).
+    Call last in the scene's draw while t0 <= t < t0 + dur."""
+    u = (t - t0) / dur
+    if not 0 <= u < 1:
+        return
+    src = ctx.get_target()
+    snap = cairo.ImageSurface(cairo.FORMAT_ARGB32, 1080, 1920)
+    c2 = cairo.Context(snap); c2.set_source_surface(src); c2.paint()
+    ctx.save(); ctx.set_operator(cairo.OPERATOR_SOURCE)
+    rng = random.Random(seed + int(t * 30))
+    for _ in range(22):
+        y0, hh = rng.uniform(560, 1600), rng.uniform(14, 90)
+        ctx.save(); ctx.rectangle(0, y0, 1080, hh); ctx.clip()
+        ctx.set_source_surface(snap, rng.uniform(-220, 220) * (1 - 0.6 * u), 0); ctx.paint(); ctx.restore()
+    ctx.restore()
+    ctx.set_source_rgba(1, 1, 1, 0.35 * (1 - u)); ctx.paint()                 # white tear flash
+    for k in range(6):                                                        # bright noise bars
+        y0 = 560 + ((k * 197 + t * 2400) % 1040)
+        ctx.rectangle(0, y0, 1080, 6 + 10 * ((k * 0.37) % 1)); ctx.set_source_rgba(1, 1, 1, 0.5 * (1 - u)); ctx.fill()
+    for y in range(560, 1600, 8):                                             # scanlines
+        ctx.rectangle(0, y, 1080, 2); ctx.set_source_rgba(0, 0, 0, 0.35 * (1 - u)); ctx.fill()
+    label(ctx, "◀◀", 540, 1480, 0.9 * (1 - u), size=72, col=(1, 1, 1), bold=True)
+
+
+def countdown(ctx, t, t0, text, x=540, y=1080, size=150, col=(1, 1, 1)):
+    """A number / short word that POPS in at t0 (scale overshoot) — timers, scores, 'DAY 1'."""
+    u = t - t0
+    if u < 0:
+        return
+    k = 1 + 0.35 * math.exp(-9 * u) * math.cos(14 * u)
+    ctx.save(); ctx.translate(x, y); ctx.scale(k, k)
+    label(ctx, text, 0, size * 0.35, min(1.0, u * 8), size=size, col=col, bold=True)
+    ctx.restore()

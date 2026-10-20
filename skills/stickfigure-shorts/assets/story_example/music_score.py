@@ -13,7 +13,7 @@ STEP_STARTS = [0.4, 1.3, 2.2, 3.0, 3.7, 4.3, 4.9]   # same list as episode.py (s
 def compose(s):
     # hook: racing heartbeat, a jolt as he nearly goes down by the sign
     s.heartbeat(0.0, 1.0); s.heartbeat(0.34, 1.1)
-    s.thud(0.7, 0.7); s.piano(0.7, 40, 2.6, 0.6)
+    s.hook_hit(0.7, "slam")
 
     # 0.7–9: the endless road, two falls
     for bar, ch in enumerate([EM, C, G, D]):
