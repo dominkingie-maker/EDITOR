@@ -1,0 +1,37 @@
+[
+ {
+  "date": "2026-10-20",
+  "video": "you-can-care-without-carrying-everything.mp4",
+  "title": "You Can Care Without Carrying Everything",
+  "scenes": [
+   {
+    "template": "custom:box_slam_hook",
+    "caption": "He was already struggling. / They handed him more."
+   },
+   {
+    "template": "custom:carry_for_all",
+    "caption": "He carried everyone's burdens. / He didn't want to disappoint them."
+   },
+   {
+    "template": "custom:stack_tips",
+    "caption": "Every time someone asked, / he said yes."
+   },
+   {
+    "template": "custom:empty_hands",
+    "caption": "But helping everyone / was wearing him down."
+   },
+   {
+    "template": "custom:palm_no",
+    "caption": "This time, he said no. / They could carry their own."
+   },
+   {
+    "template": "custom:own_box",
+    "caption": "He still cared. / He just needed a limit."
+   },
+   {
+    "template": "custom:relaxed_close",
+    "caption": "YOU CAN CARE / WITHOUT CARRYING EVERYTHING."
+   }
+  ]
+ }
+]
