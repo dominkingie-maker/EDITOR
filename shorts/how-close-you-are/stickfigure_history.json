@@ -1,0 +1,41 @@
+[
+ {
+  "date": "2026-10-20",
+  "video": "how-close-you-are.mp4",
+  "title": "How Close You Are",
+  "scenes": [
+   {
+    "template": "custom:knees_hit_hook",
+    "caption": "His legs were shaking. / Then they gave out."
+   },
+   {
+    "template": "custom:no_finish_in_sight",
+    "caption": "He looked ahead. / No finish line in sight."
+   },
+   {
+    "template": "custom:sits_eyes_closed",
+    "caption": "Exhausted, he sat down. / And closed his eyes."
+   },
+   {
+    "template": "custom:crane_reveal",
+    "caption": "Just beyond that hill... / only a few steps away."
+   },
+   {
+    "template": "custom:stands_again",
+    "caption": "He couldn't see it. / But he stood up anyway."
+   },
+   {
+    "template": "custom:crest_and_cross",
+    "caption": "One step. Then another. / There it was."
+   },
+   {
+    "template": "custom:under_the_line",
+    "caption": ""
+   },
+   {
+    "template": "custom:final_message",
+    "caption": "YOU CAN'T ALWAYS SEE / HOW CLOSE YOU ARE."
+   }
+  ]
+ }
+]
