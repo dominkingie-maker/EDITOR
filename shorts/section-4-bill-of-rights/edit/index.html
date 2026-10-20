@@ -1,0 +1,300 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=1080, height=1920">
+<title>Section 4 - Bill of Rights</title>
+<script src="assets/gsap.min.js"></script>
+<style>
+@font-face{font-family:'Montserrat';src:url(assets/fonts/montserrat-latin.woff2) format('woff2');font-weight:100 900;font-display:block}
+@font-face{font-family:'Abril Fatface';src:url(assets/fonts/abril-latin.woff2) format('woff2');font-display:block}
+:root{--navy:#0b1626;--blue:#0038A8;--red:#CE1126;--gold:#FCD116;--sky:#8EC5FF;--mint:#7BE3A8}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{width:1080px;height:1920px;overflow:hidden;background:#000;font-family:'Montserrat',sans-serif;color:#fff}
+#root{position:relative;width:1080px;height:1920px;overflow:hidden;background:#000}
+.layer{position:absolute;inset:0;width:1080px;height:1920px}
+#cam,#punch{position:absolute;inset:0;transform-origin:540px 640px}
+#face{display:block;width:1080px;height:1920px;object-fit:cover}
+#freeze{position:absolute;inset:0;width:1080px;height:1920px;object-fit:cover}
+/* top card: hook title, then the five-freedoms tracker */
+#topcard{position:absolute;left:90px;top:92px;width:900px;height:236px;border-radius:28px;overflow:hidden;
+  background:linear-gradient(160deg,rgba(13,30,58,.94),rgba(8,16,30,.94));border:2px solid rgba(255,255,255,.18);
+  box-shadow:0 18px 40px rgba(0,0,0,.35)}
+#topcard::before{content:'';position:absolute;left:0;top:0;bottom:0;width:12px;
+  background:linear-gradient(var(--blue) 0 50%,var(--red) 50% 100%)}
+#hook-inner{position:absolute;inset:0;padding:26px 44px 0 60px}
+.kicker{font-weight:700;font-size:25px;letter-spacing:5px;color:var(--gold);text-transform:uppercase}
+.hook-title{font-weight:900;font-size:112px;line-height:1;letter-spacing:-3px;margin-top:8px;white-space:nowrap}
+#hook-4{display:inline-block;color:var(--gold);transform-origin:50% 60%}
+#hook-line{height:4px;width:330px;background:var(--gold);margin-top:12px;transform-origin:0 50%;border-radius:2px}
+.hook-sub{position:absolute;right:44px;bottom:28px;font-weight:600;font-size:22px;color:#c9d4e4;text-align:right;line-height:1.35}
+#tracker{position:absolute;inset:0;padding:20px 30px 0 46px;opacity:0}
+.tr-head{display:flex;justify-content:space-between;align-items:center;font-weight:800;font-size:22px;letter-spacing:4px;color:#c9d4e4}
+#tracker-count{color:#fff;font-size:26px;letter-spacing:1px;display:inline-block}
+.slots{display:flex;justify-content:space-between;margin-top:16px}
+.slot{width:160px;display:flex;flex-direction:column;align-items:center;opacity:.55}
+.slot-ico{position:relative;width:84px;height:84px;border-radius:50%;background:rgba(255,255,255,.1);color:#fff;
+  display:flex;align-items:center;justify-content:center}
+.slot-ico .ico{width:48px;height:48px}
+.slot-txt{margin-top:8px;font-weight:800;font-size:19px;letter-spacing:1px;text-transform:uppercase}
+.tick{position:absolute;right:-6px;top:-6px;width:36px;height:36px;border-radius:50%;background:#18a058;opacity:0;
+  border:3px solid var(--navy);display:flex;align-items:center;justify-content:center}
+.tick svg{width:22px;height:22px;fill:none;stroke:#fff;stroke-width:3.5;stroke-linecap:round;stroke-linejoin:round}
+.ico{fill:none;stroke:currentColor;stroke-width:4.5;stroke-linecap:round;stroke-linejoin:round}
+/* five chips over the shirt */
+#chips{position:absolute;left:0;top:1150px;width:1080px}
+.chip{width:600px;height:78px;margin:0 auto 12px;border-radius:40px;display:flex;align-items:center;gap:22px;padding:0 30px 0 9px;
+  background:rgba(11,22,38,.9);border:2px solid rgba(255,255,255,.22);opacity:0}
+.chip-ico{width:60px;height:60px;border-radius:50%;background:var(--gold);color:var(--navy);display:flex;align-items:center;justify-content:center}
+.chip-ico .ico{width:36px;height:36px}
+.chip-txt{font-weight:900;font-size:44px;letter-spacing:1px;text-transform:uppercase}
+/* bricks */
+#bricks{position:absolute;left:90px;top:92px;width:900px;height:236px;opacity:0;display:grid;
+  grid-template-columns:1fr 1fr;grid-template-rows:1fr 1fr;gap:14px;padding:22px 40px}
+.brick{display:flex;align-items:center;justify-content:center;border-radius:16px;font-weight:900;font-size:34px;white-space:nowrap;
+  text-transform:uppercase;background:rgba(11,22,38,.92);border:2px solid rgba(255,255,255,.22);box-shadow:0 10px 24px rgba(0,0,0,.3)}
+#brick2{grid-column:1 / span 2;grid-row:1}#brick0{grid-row:2;grid-column:1}#brick1{grid-row:2;grid-column:2}
+/* balance scale */
+#scale{position:absolute;left:90px;top:92px;width:900px;height:236px;opacity:0;border-radius:28px;
+  background:linear-gradient(160deg,rgba(13,30,58,.94),rgba(8,16,30,.94));border:2px solid rgba(255,255,255,.18);box-shadow:0 18px 40px rgba(0,0,0,.35)}
+#scale svg{position:absolute;inset:0;overflow:visible}
+.weight{position:absolute;width:250px;height:52px;border-radius:12px;display:flex;align-items:center;justify-content:center;
+  font-weight:900;font-size:30px;letter-spacing:1px;color:var(--navy)}
+#w-free{background:var(--gold)}#w-resp{background:var(--mint)}
+#pan-l,#pan-r{position:absolute;top:96px;width:250px;height:100px}
+#pan-l{left:45px}#pan-r{right:45px}
+.string{position:absolute;left:123px;top:-26px;width:4px;height:60px;background:#e8edf5;border-radius:2px}
+.pan-plate{position:absolute;bottom:0;left:0;width:250px;height:14px;border-radius:0 0 30px 30px;background:#e8edf5}
+#w-free,#w-resp{left:0;bottom:14px}
+#balance-tag{position:absolute;left:360px;top:8px;width:180px;text-align:center;font-weight:900;font-size:22px;letter-spacing:4px;
+  color:var(--navy);background:var(--gold);border-radius:20px;padding:5px 0;opacity:0}
+/* captions */
+.cap{position:absolute;left:0;top:1205px;width:1080px;display:flex;justify-content:center;opacity:0}
+.cap span{display:inline-block;max-width:900px;text-align:center;font-weight:800;font-size:64px;line-height:1.1;text-transform:uppercase;
+  padding:12px 30px 14px;border-radius:18px;background:rgba(10,18,32,.86);border:2px solid rgba(255,255,255,.26)}
+.cap.gold span{color:var(--gold)}.cap.blue span{color:var(--sky)}.cap.green span{color:var(--mint)}
+.cap.serif span{font-family:'Abril Fatface',serif;font-weight:400;text-transform:none;font-size:70px}
+/* end card */
+#end-dim{position:absolute;inset:0;background:rgba(8,14,26,.84)}
+#end-card{position:absolute;left:90px;top:520px;width:900px;text-align:left}
+.end-kicker{font-weight:800;font-size:28px;letter-spacing:5px;color:var(--gold)}
+.end-title{font-weight:900;font-size:76px;line-height:1;margin:14px 0 34px;letter-spacing:-2px}
+.end-quote{font-family:'Abril Fatface',serif;font-size:50px;line-height:1.28;color:#fff;border-left:8px solid var(--gold);padding-left:34px}
+.end-src{margin-top:34px;font-weight:600;font-size:26px;color:#b8c4d6;letter-spacing:1px}
+#fade{position:absolute;inset:0;background:#000;opacity:0}
+</style></head><body>
+<div id="root" data-composition-id="main" data-duration="53.433" data-width="1080" data-height="1920">
+  <div id="cam"><div id="punch">
+    <video id="face" src="assets/edited.mov" muted playsinline data-start="0" data-duration="48.433" data-track-index="0"></video>
+  </div></div>
+  <img id="freeze" class="clip" src="assets/last-frame.jpg" alt="" data-start="48.433" data-duration="5.0" data-track-index="1">
+  <audio id="mix" src="assets/audio/mix.wav" data-start="0" data-duration="53.433" data-track-index="2" data-volume="1"></audio>
+  <div id="gfx" class="layer clip" data-start="0" data-duration="48.433" data-track-index="3">
+    <div id="topcard">
+      <div id="hook-inner">
+        <div class="kicker">Bill of Rights &middot; Article III</div>
+        <div class="hook-title">SECTION <span id="hook-4">4</span></div>
+        <div id="hook-line"></div>
+        <div class="hook-sub">1987 Philippine<br>Constitution</div>
+      </div>
+      <div id="tracker">
+        <div class="tr-head"><span id="tracker-title">SECTION 4 PROTECTS</span><span id="tracker-count">0/5</span></div>
+        <div class="slots"><div class="slot" id="slot-speech"><div class="slot-ico"><svg class="ico " viewBox="0 0 64 64"><path d="M10 14h44a6 6 0 0 1 6 6v22a6 6 0 0 1-6 6H30l-12 10v-10h-8a6 6 0 0 1-6-6V20a6 6 0 0 1 6-6z"/></svg><div class="tick"><svg viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7"/></svg></div></div><div class="slot-txt">Speech</div></div>
+<div class="slot" id="slot-expression"><div class="slot-ico"><svg class="ico " viewBox="0 0 64 64"><path d="M32 8a18 18 0 0 0-10 33v7h20v-7A18 18 0 0 0 32 8z"/><path d="M24 54h16M27 60h10"/></svg><div class="tick"><svg viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7"/></svg></div></div><div class="slot-txt">Expression</div></div>
+<div class="slot" id="slot-press"><div class="slot-ico"><svg class="ico " viewBox="0 0 64 64"><rect x="8" y="12" width="40" height="42" rx="4"/><path d="M48 22h8v26a6 6 0 0 1-12 0M16 22h24M16 32h24M16 42h14"/></svg><div class="tick"><svg viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7"/></svg></div></div><div class="slot-txt">Press</div></div>
+<div class="slot" id="slot-assembly"><div class="slot-ico"><svg class="ico " viewBox="0 0 64 64"><circle cx="32" cy="20" r="7"/><circle cx="14" cy="26" r="6"/><circle cx="50" cy="26" r="6"/><path d="M20 54v-8a12 12 0 0 1 24 0v8M4 54v-6a10 10 0 0 1 14-9M60 54v-6a10 10 0 0 0-14-9"/></svg><div class="tick"><svg viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7"/></svg></div></div><div class="slot-txt">Assembly</div></div>
+<div class="slot" id="slot-petition"><div class="slot-ico"><svg class="ico " viewBox="0 0 64 64"><path d="M14 6h26l12 12v40H14z"/><path d="M40 6v12h12M22 30h20M22 40h20M22 50h12"/></svg><div class="tick"><svg viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7"/></svg></div></div><div class="slot-txt">Petition</div></div></div>
+      </div>
+    </div>
+    <div id="chips"><div class="chip" id="chip-speech"><div class="chip-ico"><svg class="ico " viewBox="0 0 64 64"><path d="M10 14h44a6 6 0 0 1 6 6v22a6 6 0 0 1-6 6H30l-12 10v-10h-8a6 6 0 0 1-6-6V20a6 6 0 0 1 6-6z"/></svg></div><div class="chip-txt">Speech</div></div>
+<div class="chip" id="chip-expression"><div class="chip-ico"><svg class="ico " viewBox="0 0 64 64"><path d="M32 8a18 18 0 0 0-10 33v7h20v-7A18 18 0 0 0 32 8z"/><path d="M24 54h16M27 60h10"/></svg></div><div class="chip-txt">Expression</div></div>
+<div class="chip" id="chip-press"><div class="chip-ico"><svg class="ico " viewBox="0 0 64 64"><rect x="8" y="12" width="40" height="42" rx="4"/><path d="M48 22h8v26a6 6 0 0 1-12 0M16 22h24M16 32h24M16 42h14"/></svg></div><div class="chip-txt">Press</div></div>
+<div class="chip" id="chip-assembly"><div class="chip-ico"><svg class="ico " viewBox="0 0 64 64"><circle cx="32" cy="20" r="7"/><circle cx="14" cy="26" r="6"/><circle cx="50" cy="26" r="6"/><path d="M20 54v-8a12 12 0 0 1 24 0v8M4 54v-6a10 10 0 0 1 14-9M60 54v-6a10 10 0 0 0-14-9"/></svg></div><div class="chip-txt">Assembly</div></div>
+<div class="chip" id="chip-petition"><div class="chip-ico"><svg class="ico " viewBox="0 0 64 64"><path d="M14 6h26l12 12v40H14z"/><path d="M40 6v12h12M22 30h20M22 40h20M22 50h12"/></svg></div><div class="chip-txt">Petition</div></div></div>
+    <div id="bricks"><div class="brick" id="brick0">Speak up</div><div class="brick" id="brick1">Share thoughts</div><div class="brick" id="brick2">Better society</div></div>
+    <div id="scale">
+      <svg viewBox="0 0 900 236">
+        <polygon id="fulcrum" points="450,70 424,214 476,214" fill="#e8edf5"/>
+        <rect x="390" y="210" width="120" height="12" rx="6" fill="#e8edf5"/>
+        <g id="beam" style="transform-origin:450px 70px"><rect x="160" y="62" width="580" height="16" rx="8" fill="#e8edf5"/>
+          <circle cx="450" cy="70" r="16" fill="#0b1626" stroke="#e8edf5" stroke-width="5"/></g>
+      </svg>
+      <div id="pan-l"><div class="string"></div><div class="weight" id="w-free">FREEDOM</div><div class="pan-plate"></div></div>
+      <div id="pan-r"><div class="string"></div><div class="weight" id="w-resp">RESPECT</div><div class="pan-plate"></div></div>
+      <div id="balance-tag">BALANCE</div>
+    </div>
+  </div>
+  <div id="caps" class="layer clip" data-start="0" data-duration="48.433" data-track-index="4">
+<div class="cap  serif" id="cap0"><span>Hello,</span></div>
+<div class="cap " id="cap1"><span>everyone!</span></div>
+<div class="cap " id="cap2"><span>Today,</span></div>
+<div class="cap " id="cap3"><span>I will discuss</span></div>
+<div class="cap gold" id="cap4"><span>Section 4</span></div>
+<div class="cap " id="cap5"><span>of the</span></div>
+<div class="cap gold" id="cap6"><span>Bill of Rights,</span></div>
+<div class="cap " id="cap7"><span>which focuses on</span></div>
+<div class="cap gold" id="cap8"><span>freedom of speech,</span></div>
+<div class="cap gold" id="cap9"><span>Section 4</span></div>
+<div class="cap gold" id="cap10"><span>protects our freedom</span></div>
+<div class="cap blue" id="cap11"><span>to speak,</span></div>
+<div class="cap blue" id="cap12"><span>express our ideas,</span></div>
+<div class="cap blue" id="cap13"><span>and share information</span></div>
+<div class="cap gold" id="cap14"><span>through the press.</span></div>
+<div class="cap " id="cap15"><span>It allows us</span></div>
+<div class="cap blue" id="cap16"><span>to share our</span></div>
+<div class="cap blue" id="cap17"><span>opinions freely.</span></div>
+<div class="cap " id="cap18"><span>It also protects</span></div>
+<div class="cap gold" id="cap19"><span>our right to</span></div>
+<div class="cap blue" id="cap20"><span>gather peacefully</span></div>
+<div class="cap " id="cap21"><span>with others and</span></div>
+<div class="cap blue" id="cap22"><span>express our concerns</span></div>
+<div class="cap blue" id="cap23"><span>to the government</span></div>
+<div class="cap " id="cap24"><span>when we want</span></div>
+<div class="cap green" id="cap25"><span>changes in our</span></div>
+<div class="cap green" id="cap26"><span>community.</span></div>
+<div class="cap gold" id="cap27"><span>This right</span></div>
+<div class="cap green" id="cap28"><span>is important because</span></div>
+<div class="cap " id="cap29"><span>it allows us to</span></div>
+<div class="cap blue" id="cap30"><span>speak up,</span></div>
+<div class="cap blue" id="cap31"><span>share our thoughts,</span></div>
+<div class="cap blue" id="cap32"><span>and help build</span></div>
+<div class="cap green" id="cap33"><span>a better society.</span></div>
+<div class="cap  serif" id="cap34"><span>Remember,</span></div>
+<div class="cap gold" id="cap35"><span>we have freedom</span></div>
+<div class="cap gold" id="cap36"><span>of expression,</span></div>
+<div class="cap " id="cap37"><span>but we must</span></div>
+<div class="cap green" id="cap38"><span>also respect</span></div>
+<div class="cap gold" id="cap39"><span>the rights of</span></div>
+<div class="cap green" id="cap40"><span>others.</span></div>
+<div class="cap  serif" id="cap41"><span>Thank you!</span></div>
+  </div>
+  <div id="end" class="layer clip" data-start="48.433" data-duration="5.0" data-track-index="5">
+    <div id="end-dim"></div>
+    <div id="end-card">
+      <div class="end-kicker">ARTICLE III &middot; BILL OF RIGHTS</div>
+      <div class="end-title">Section 4</div>
+      <div class="end-quote">&ldquo;No law shall be passed abridging the freedom of speech, of expression, or of the press, or the right of the people peaceably to assemble and petition the government for redress of grievances.&rdquo;</div>
+      <div class="end-src">1987 Constitution of the Republic of the Philippines</div>
+    </div>
+    <div id="fade"></div>
+  </div>
+</div>
+<script>
+const tl=gsap.timeline({paused:true});
+tl.fromTo('#hook-4',{scale:1},{scale:1.28,duration:.12,ease:'power2.out'},2.867);
+tl.to('#hook-4',{scale:1,duration:.35,ease:'back.out(3)'},2.987);
+tl.fromTo('#hook-line',{scaleX:0},{scaleX:1,duration:.5,ease:'power3.out'},3.667);
+tl.fromTo('#chip-speech',{opacity:0,x:-60,scale:.92},{opacity:1,x:0,scale:1,duration:.32,ease:'back.out(1.8)'},6.957);
+tl.fromTo('#chip-expression',{opacity:0,x:-60,scale:.92},{opacity:1,x:0,scale:1,duration:.32,ease:'back.out(1.8)'},7.677);
+tl.fromTo('#chip-press',{opacity:0,x:-60,scale:.92},{opacity:1,x:0,scale:1,duration:.32,ease:'back.out(1.8)'},8.977);
+tl.fromTo('#chip-assembly',{opacity:0,x:-60,scale:.92},{opacity:1,x:0,scale:1,duration:.32,ease:'back.out(1.8)'},9.397);
+tl.fromTo('#chip-petition',{opacity:0,x:-60,scale:.92},{opacity:1,x:0,scale:1,duration:.32,ease:'back.out(1.8)'},10.397);
+tl.to('.chip',{y:-1000,scale:.35,opacity:0,duration:.5,ease:'power3.in',stagger:.04},10.977);
+tl.to('#hook-inner',{opacity:0,y:-20,duration:.25},11.077);
+tl.to('#topcard',{height:196,duration:.35,ease:'power2.inOut'},11.077);
+tl.fromTo('#tracker',{opacity:0},{opacity:1,duration:.2},11.327);
+tl.from('.slot',{y:40,opacity:0,duration:.35,ease:'back.out(1.6)',stagger:.05},11.327);
+tl.to('#slot-speech',{opacity:1,duration:.15},14.247);
+tl.to('#slot-speech .slot-ico',{backgroundColor:'#FCD116',color:'#0b1626',duration:.18},14.247);
+tl.fromTo('#slot-speech .slot-ico',{scale:1},{scale:1.18,duration:.12,yoyo:true,repeat:1,ease:'power2.out'},14.247);
+tl.fromTo('#slot-speech .tick',{scale:0,opacity:0},{scale:1,opacity:1,duration:.3,ease:'back.out(3)'},14.307);
+tl.to('#slot-speech .slot-txt',{color:'#FCD116',duration:.18},14.247);
+tl.to('#slot-expression',{opacity:1,duration:.15},14.807);
+tl.to('#slot-expression .slot-ico',{backgroundColor:'#FCD116',color:'#0b1626',duration:.18},14.807);
+tl.fromTo('#slot-expression .slot-ico',{scale:1},{scale:1.18,duration:.12,yoyo:true,repeat:1,ease:'power2.out'},14.807);
+tl.fromTo('#slot-expression .tick',{scale:0,opacity:0},{scale:1,opacity:1,duration:.3,ease:'back.out(3)'},14.867);
+tl.to('#slot-expression .slot-txt',{color:'#FCD116',duration:.18},14.807);
+tl.to('#slot-press',{opacity:1,duration:.15},18.207);
+tl.to('#slot-press .slot-ico',{backgroundColor:'#FCD116',color:'#0b1626',duration:.18},18.207);
+tl.fromTo('#slot-press .slot-ico',{scale:1},{scale:1.18,duration:.12,yoyo:true,repeat:1,ease:'power2.out'},18.207);
+tl.fromTo('#slot-press .tick',{scale:0,opacity:0},{scale:1,opacity:1,duration:.3,ease:'back.out(3)'},18.267);
+tl.to('#slot-press .slot-txt',{color:'#FCD116',duration:.18},18.207);
+tl.to('#slot-assembly',{opacity:1,duration:.15},25.127);
+tl.to('#slot-assembly .slot-ico',{backgroundColor:'#FCD116',color:'#0b1626',duration:.18},25.127);
+tl.fromTo('#slot-assembly .slot-ico',{scale:1},{scale:1.18,duration:.12,yoyo:true,repeat:1,ease:'power2.out'},25.127);
+tl.fromTo('#slot-assembly .tick',{scale:0,opacity:0},{scale:1,opacity:1,duration:.3,ease:'back.out(3)'},25.186999999999998);
+tl.to('#slot-assembly .slot-txt',{color:'#FCD116',duration:.18},25.127);
+tl.to('#slot-petition',{opacity:1,duration:.15},29.367);
+tl.to('#slot-petition .slot-ico',{backgroundColor:'#FCD116',color:'#0b1626',duration:.18},29.367);
+tl.fromTo('#slot-petition .slot-ico',{scale:1},{scale:1.18,duration:.12,yoyo:true,repeat:1,ease:'power2.out'},29.367);
+tl.fromTo('#slot-petition .tick',{scale:0,opacity:0},{scale:1,opacity:1,duration:.3,ease:'back.out(3)'},29.427);
+tl.to('#slot-petition .slot-txt',{color:'#FCD116',duration:.18},29.367);
+tl.fromTo('#tracker-title',{opacity:.75},{opacity:1,duration:.1},32.127);
+tl.to('#tracker-count',{color:'#FCD116',scale:1.15,duration:.15,yoyo:true,repeat:1},32.127);
+tl.to('#topcard',{y:-260,opacity:0,duration:.4,ease:'power2.in'},32.677);
+const counter={n:0};const cnt=document.getElementById('tracker-count');
+tl.call(()=>{cnt.textContent='1/5'},null,14.247);
+tl.call(()=>{cnt.textContent='2/5'},null,14.807);
+tl.call(()=>{cnt.textContent='3/5'},null,18.207);
+tl.call(()=>{cnt.textContent='4/5'},null,25.127);
+tl.call(()=>{cnt.textContent='5/5'},null,29.367);
+tl.call(()=>{cnt.textContent='0/5'},null,11.177);
+tl.fromTo('#bricks',{opacity:0,y:-30},{opacity:1,y:0,duration:.3,ease:'power2.out'},36.137);
+tl.fromTo('#brick0',{y:-220,opacity:0},{y:0,opacity:1,duration:.28,ease:'bounce.out'},36.187);
+tl.fromTo('#brick1',{y:-220,opacity:0},{y:0,opacity:1,duration:.28,ease:'bounce.out'},37.027);
+tl.fromTo('#brick2',{y:-220,opacity:0},{y:0,opacity:1,duration:.28,ease:'bounce.out'},39.554);
+tl.to('#brick2',{backgroundColor:'#FCD116',color:'#0b1626',duration:.2},40.004);
+tl.to('#bricks',{opacity:0,y:-40,duration:.25,ease:'power2.in'},40.664);
+tl.fromTo('#scale',{opacity:0,y:-30},{opacity:1,y:0,duration:.3,ease:'power2.out'},40.7);
+tl.fromTo('#w-free',{y:-160,opacity:0},{y:0,opacity:1,duration:.25,ease:'power2.in'},42.007);
+tl.to('#beam',{rotation:-6,duration:.6,ease:'elastic.out(1,.5)'},42.227);
+tl.to('#pan-l',{y:30,duration:.6,ease:'elastic.out(1,.5)'},42.227);
+tl.to('#pan-r',{y:-30,duration:.6,ease:'elastic.out(1,.5)'},42.227);
+tl.fromTo('#w-resp',{y:-200,opacity:0},{y:0,opacity:1,duration:.25,ease:'power2.in'},44.927);
+tl.to('#beam',{rotation:0,duration:.8,ease:'elastic.out(1,.45)'},45.147);
+tl.to('#pan-l',{y:0,duration:.8,ease:'elastic.out(1,.45)'},45.147);
+tl.to('#pan-r',{y:0,duration:.8,ease:'elastic.out(1,.45)'},45.147);
+tl.fromTo('#balance-tag',{opacity:0,scale:.6},{opacity:1,scale:1,duration:.35,ease:'back.out(2)'},46.817);
+tl.to('#fulcrum',{fill:'#FCD116',duration:.3},46.817);
+tl.to('#scale',{opacity:0,duration:.3},48.133);
+tl.set('#scale',{opacity:0},48.433);
+tl.fromTo('#cam',{scale:1},{scale:1.035,duration:48.433,ease:'none'},0);
+tl.set('#punch',{scale:1.14},19.247);tl.set('#punch',{scale:1},22.677);
+tl.set('#punch',{scale:1.14},33.973);tl.set('#punch',{scale:1},36.237);
+tl.set('#punch',{scale:1.14},47.577);tl.set('#punch',{scale:1},48.433);
+tl.set('#cap0',{opacity:1},0.02);tl.set('#cap0',{opacity:0},0.5);
+tl.set('#cap1',{opacity:1},0.5);tl.set('#cap1',{opacity:0},0.94);
+tl.set('#cap2',{opacity:1},0.94);tl.set('#cap2',{opacity:0},1.4);
+tl.set('#cap3',{opacity:1},1.4);tl.set('#cap3',{opacity:0},2.28);
+tl.set('#cap4',{opacity:1},2.28);tl.set('#cap4',{opacity:0},3.2);
+tl.set('#cap5',{opacity:1},3.2);tl.set('#cap5',{opacity:0},3.6);
+tl.set('#cap6',{opacity:1},3.6);tl.set('#cap6',{opacity:0},4.76);
+tl.set('#cap7',{opacity:1},4.76);tl.set('#cap7',{opacity:0},6.2);
+tl.set('#cap8',{opacity:1},6.2);tl.set('#cap8',{opacity:0},6.957);
+tl.set('#cap9',{opacity:1},11.577);tl.set('#cap9',{opacity:0},12.54);
+tl.set('#cap10',{opacity:1},12.54);tl.set('#cap10',{opacity:0},13.9);
+tl.set('#cap11',{opacity:1},13.9);tl.set('#cap11',{opacity:0},14.74);
+tl.set('#cap12',{opacity:1},14.74);tl.set('#cap12',{opacity:0},16.3);
+tl.set('#cap13',{opacity:1},16.3);tl.set('#cap13',{opacity:0},17.7);
+tl.set('#cap14',{opacity:1},17.7);tl.set('#cap14',{opacity:0},18.82);
+tl.set('#cap15',{opacity:1},18.82);tl.set('#cap15',{opacity:0},20.02);
+tl.set('#cap16',{opacity:1},20.02);tl.set('#cap16',{opacity:0},20.86);
+tl.set('#cap17',{opacity:1},20.86);tl.set('#cap17',{opacity:0},22.647);
+tl.set('#cap18',{opacity:1},22.66);tl.set('#cap18',{opacity:0},23.94);
+tl.set('#cap19',{opacity:1},23.94);tl.set('#cap19',{opacity:0},25.06);
+tl.set('#cap20',{opacity:1},25.06);tl.set('#cap20',{opacity:0},26.46);
+tl.set('#cap21',{opacity:1},26.46);tl.set('#cap21',{opacity:0},27.58);
+tl.set('#cap22',{opacity:1},27.58);tl.set('#cap22',{opacity:0},28.9);
+tl.set('#cap23',{opacity:1},28.9);tl.set('#cap23',{opacity:0},30.133);
+tl.set('#cap24',{opacity:1},30.133);tl.set('#cap24',{opacity:0},30.86);
+tl.set('#cap25',{opacity:1},30.86);tl.set('#cap25',{opacity:0},32.06);
+tl.set('#cap26',{opacity:1},32.06);tl.set('#cap26',{opacity:0},32.833);
+tl.set('#cap27',{opacity:1},32.833);tl.set('#cap27',{opacity:0},33.666);
+tl.set('#cap28',{opacity:1},33.666);tl.set('#cap28',{opacity:0},35.026);
+tl.set('#cap29',{opacity:1},35.026);tl.set('#cap29',{opacity:0},36.17);
+tl.set('#cap30',{opacity:1},36.17);tl.set('#cap30',{opacity:0},37.01);
+tl.set('#cap31',{opacity:1},37.01);tl.set('#cap31',{opacity:0},38.33);
+tl.set('#cap32',{opacity:1},38.33);tl.set('#cap32',{opacity:0},39.337);
+tl.set('#cap33',{opacity:1},39.337);tl.set('#cap33',{opacity:0},40.733);
+tl.set('#cap34',{opacity:1},40.733);tl.set('#cap34',{opacity:0},41.51);
+tl.set('#cap35',{opacity:1},41.51);tl.set('#cap35',{opacity:0},42.67);
+tl.set('#cap36',{opacity:1},42.67);tl.set('#cap36',{opacity:0},43.75);
+tl.set('#cap37',{opacity:1},43.75);tl.set('#cap37',{opacity:0},44.55);
+tl.set('#cap38',{opacity:1},44.55);tl.set('#cap38',{opacity:0},45.59);
+tl.set('#cap39',{opacity:1},45.59);tl.set('#cap39',{opacity:0},46.75);
+tl.set('#cap40',{opacity:1},46.75);tl.set('#cap40',{opacity:0},47.51);
+tl.set('#cap41',{opacity:1},47.51);tl.set('#cap41',{opacity:0},48.433);
+tl.fromTo('#end-dim',{opacity:0},{opacity:1,duration:.5},48.433);
+tl.from('#end-card > *',{opacity:0,y:30,duration:.5,ease:'power2.out',stagger:.18},48.583);
+tl.to('#fade',{opacity:1,duration:.5},52.933);
+tl.set({},{},53.433);
+window.__timelines=window.__timelines||{};window.__timelines['main']=tl;
+</script>
+</body></html>

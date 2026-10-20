@@ -1,0 +1,68 @@
+{
+ "fps": 30,
+ "source": "assets/raw.mp4",
+ "keep": [
+  [
+   1.9333333333333333,
+   13.166666666666666
+  ],
+  [
+   13.466666666666667,
+   32.43333333333333
+  ],
+  [
+   32.63333333333333,
+   35.333333333333336
+  ],
+  [
+   35.766666666666666,
+   41.86666666666667
+  ],
+  [
+   42.1,
+   43.9
+  ],
+  [
+   44.166666666666664,
+   51.8
+  ]
+ ],
+ "duration": 48.433,
+ "cuts": [
+  {
+   "source_start": 13.166666666666666,
+   "source_end": 13.466666666666667,
+   "reason": "sentence break after 'petition.' 0.61s -> 0.30s"
+  },
+  {
+   "source_start": 32.43333333333333,
+   "source_end": 32.63333333333333,
+   "reason": "pause after 'government' 0.46s -> 0.24s"
+  },
+  {
+   "source_start": 35.333333333333336,
+   "source_end": 35.766666666666666,
+   "reason": "sentence break after 'community.' 0.75s -> 0.32s"
+  },
+  {
+   "source_start": 41.86666666666667,
+   "source_end": 42.1,
+   "reason": "hesitation between 'help' and 'build' 0.45s -> 0.20s"
+  },
+  {
+   "source_start": 43.9,
+   "source_end": 44.166666666666664,
+   "reason": "sentence break after 'society.' 0.59s -> 0.31s"
+  },
+  {
+   "source_start": 0,
+   "source_end": 1.9333333333333333,
+   "reason": "silent lead-in before 'Hello'"
+  },
+  {
+   "source_start": 51.8,
+   "source_end": 53.033,
+   "reason": "silence after 'Thank you!'"
+  }
+ ]
+}

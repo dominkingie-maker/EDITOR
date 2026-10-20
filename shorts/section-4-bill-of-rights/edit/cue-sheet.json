@@ -1,0 +1,423 @@
+{
+ "duration": 53.433,
+ "captions": [
+  {
+   "text": "Hello,",
+   "start": 0.02,
+   "end": 0.5,
+   "color": ""
+  },
+  {
+   "text": "everyone!",
+   "start": 0.5,
+   "end": 0.94,
+   "color": ""
+  },
+  {
+   "text": "Today,",
+   "start": 0.94,
+   "end": 1.4,
+   "color": ""
+  },
+  {
+   "text": "I will discuss",
+   "start": 1.4,
+   "end": 2.28,
+   "color": ""
+  },
+  {
+   "text": "Section 4",
+   "start": 2.28,
+   "end": 3.2,
+   "color": "gold"
+  },
+  {
+   "text": "of the",
+   "start": 3.2,
+   "end": 3.6,
+   "color": ""
+  },
+  {
+   "text": "Bill of Rights,",
+   "start": 3.6,
+   "end": 4.76,
+   "color": "gold"
+  },
+  {
+   "text": "which focuses on",
+   "start": 4.76,
+   "end": 6.2,
+   "color": ""
+  },
+  {
+   "text": "freedom of speech,",
+   "start": 6.2,
+   "end": 6.957,
+   "color": "gold"
+  },
+  {
+   "text": "Section 4",
+   "start": 11.577,
+   "end": 12.54,
+   "color": "gold"
+  },
+  {
+   "text": "protects our freedom",
+   "start": 12.54,
+   "end": 13.9,
+   "color": "gold"
+  },
+  {
+   "text": "to speak,",
+   "start": 13.9,
+   "end": 14.74,
+   "color": "blue"
+  },
+  {
+   "text": "express our ideas,",
+   "start": 14.74,
+   "end": 16.3,
+   "color": "blue"
+  },
+  {
+   "text": "and share information",
+   "start": 16.3,
+   "end": 17.7,
+   "color": "blue"
+  },
+  {
+   "text": "through the press.",
+   "start": 17.7,
+   "end": 18.82,
+   "color": "gold"
+  },
+  {
+   "text": "It allows us",
+   "start": 18.82,
+   "end": 20.02,
+   "color": ""
+  },
+  {
+   "text": "to share our",
+   "start": 20.02,
+   "end": 20.86,
+   "color": "blue"
+  },
+  {
+   "text": "opinions freely.",
+   "start": 20.86,
+   "end": 22.647,
+   "color": "blue"
+  },
+  {
+   "text": "It also protects",
+   "start": 22.66,
+   "end": 23.94,
+   "color": ""
+  },
+  {
+   "text": "our right to",
+   "start": 23.94,
+   "end": 25.06,
+   "color": "gold"
+  },
+  {
+   "text": "gather peacefully",
+   "start": 25.06,
+   "end": 26.46,
+   "color": "blue"
+  },
+  {
+   "text": "with others and",
+   "start": 26.46,
+   "end": 27.58,
+   "color": ""
+  },
+  {
+   "text": "express our concerns",
+   "start": 27.58,
+   "end": 28.9,
+   "color": "blue"
+  },
+  {
+   "text": "to the government",
+   "start": 28.9,
+   "end": 30.133,
+   "color": "blue"
+  },
+  {
+   "text": "when we want",
+   "start": 30.133,
+   "end": 30.86,
+   "color": ""
+  },
+  {
+   "text": "changes in our",
+   "start": 30.86,
+   "end": 32.06,
+   "color": "green"
+  },
+  {
+   "text": "community.",
+   "start": 32.06,
+   "end": 32.833,
+   "color": "green"
+  },
+  {
+   "text": "This right",
+   "start": 32.833,
+   "end": 33.666,
+   "color": "gold"
+  },
+  {
+   "text": "is important because",
+   "start": 33.666,
+   "end": 35.026,
+   "color": "green"
+  },
+  {
+   "text": "it allows us to",
+   "start": 35.026,
+   "end": 36.17,
+   "color": ""
+  },
+  {
+   "text": "speak up,",
+   "start": 36.17,
+   "end": 37.01,
+   "color": "blue"
+  },
+  {
+   "text": "share our thoughts,",
+   "start": 37.01,
+   "end": 38.33,
+   "color": "blue"
+  },
+  {
+   "text": "and help build",
+   "start": 38.33,
+   "end": 39.337,
+   "color": "blue"
+  },
+  {
+   "text": "a better society.",
+   "start": 39.337,
+   "end": 40.733,
+   "color": "green"
+  },
+  {
+   "text": "Remember,",
+   "start": 40.733,
+   "end": 41.51,
+   "color": ""
+  },
+  {
+   "text": "we have freedom",
+   "start": 41.51,
+   "end": 42.67,
+   "color": "gold"
+  },
+  {
+   "text": "of expression,",
+   "start": 42.67,
+   "end": 43.75,
+   "color": "gold"
+  },
+  {
+   "text": "but we must",
+   "start": 43.75,
+   "end": 44.55,
+   "color": ""
+  },
+  {
+   "text": "also respect",
+   "start": 44.55,
+   "end": 45.59,
+   "color": "green"
+  },
+  {
+   "text": "the rights of",
+   "start": 45.59,
+   "end": 46.75,
+   "color": "gold"
+  },
+  {
+   "text": "others.",
+   "start": 46.75,
+   "end": 47.51,
+   "color": "green"
+  },
+  {
+   "text": "Thank you!",
+   "start": 47.51,
+   "end": 48.433,
+   "color": ""
+  }
+ ],
+ "sound_cues": [
+  {
+   "time": 2.867,
+   "level_db": -14,
+   "purpose": "the '4' pulses on 'four'"
+  },
+  {
+   "time": 7.027,
+   "level_db": -15,
+   "purpose": "chip 'speech' lands"
+  },
+  {
+   "time": 7.747,
+   "level_db": -15,
+   "purpose": "chip 'expression' lands"
+  },
+  {
+   "time": 9.047,
+   "level_db": -15,
+   "purpose": "chip 'press' lands"
+  },
+  {
+   "time": 9.467,
+   "level_db": -15,
+   "purpose": "chip 'assembly' lands"
+  },
+  {
+   "time": 10.467,
+   "level_db": -15,
+   "purpose": "chip 'petition' lands"
+  },
+  {
+   "time": 11.077,
+   "level_db": -20,
+   "purpose": "chips fly up into the tracker"
+  },
+  {
+   "time": 14.327,
+   "level_db": -16,
+   "purpose": "'speech' checked"
+  },
+  {
+   "time": 14.887,
+   "level_db": -16,
+   "purpose": "'expression' checked"
+  },
+  {
+   "time": 18.287,
+   "level_db": -16,
+   "purpose": "'press' checked"
+  },
+  {
+   "time": 25.207,
+   "level_db": -16,
+   "purpose": "'assembly' checked"
+  },
+  {
+   "time": 29.447,
+   "level_db": -16,
+   "purpose": "'petition' checked"
+  },
+  {
+   "time": 32.227,
+   "level_db": -19,
+   "purpose": "all five protected"
+  },
+  {
+   "time": 32.677,
+   "level_db": -24,
+   "purpose": "tracker exits"
+  },
+  {
+   "time": 36.367,
+   "level_db": -15,
+   "purpose": "brick 'Speak up' lands"
+  },
+  {
+   "time": 37.207,
+   "level_db": -15,
+   "purpose": "brick 'Share thoughts' lands"
+  },
+  {
+   "time": 39.734,
+   "level_db": -15,
+   "purpose": "brick 'Better society' lands"
+  },
+  {
+   "time": 42.227,
+   "level_db": -14,
+   "purpose": "'freedom' drops into the scale"
+  },
+  {
+   "time": 45.147,
+   "level_db": -14,
+   "purpose": "'respect' drops in, scale levels"
+  },
+  {
+   "time": 46.867,
+   "level_db": -20,
+   "purpose": "balanced glow"
+  },
+  {
+   "time": 48.483,
+   "level_db": -22,
+   "purpose": "end card"
+  },
+  {
+   "time": 48.833,
+   "level_db": -20,
+   "purpose": "end card settles"
+  }
+ ],
+ "beats": {
+  "four": 2.867,
+  "chips": {
+   "speech": 6.957,
+   "expression": 7.677,
+   "press": 8.977,
+   "assembly": 9.397,
+   "petition": 10.397
+  },
+  "to_tracker": 11.177,
+  "checks": {
+   "speech": 14.247,
+   "expression": 14.807,
+   "press": 18.207,
+   "assembly": 25.127,
+   "petition": 29.367
+  },
+  "tracker_out": 32.677,
+  "punch_ins": [
+   [
+    19.247,
+    22.677
+   ],
+   [
+    33.973,
+    36.237
+   ],
+   [
+    47.577,
+    48.433
+   ]
+  ],
+  "bricks": [
+   [
+    "Speak up",
+    36.187
+   ],
+   [
+    "Share thoughts",
+    37.027
+   ],
+   [
+    "Better society",
+    39.554
+   ]
+  ],
+  "scale": [
+   40.7,
+   42.007,
+   44.927,
+   46.817
+  ],
+  "end_card": 48.433
+ }
+}

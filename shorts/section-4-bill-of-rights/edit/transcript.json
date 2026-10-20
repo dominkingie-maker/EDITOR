@@ -1,0 +1,776 @@
+{
+ "text": "Hello, everyone! Today, I will discuss Section 4 of the Bill of Rights, which focuses on freedom of speech, expression, the press, assembly, and petition. Section 4 protects our freedom to speak, express our ideas, and share information through the press. It allows us to share our opinions freely. It also protects our right to gather peacefully with others and express our concerns to the government when we want changes in our community. This right is important because it allows us to speak up, share our thoughts, and help build a better society. Remember, we have freedom of expression, but we must also respect the rights of others. Thank you!",
+ "audio_duration_secs": 48.433,
+ "words": [
+  {
+   "text": "Hello,",
+   "start": 0.087,
+   "end": 0.537,
+   "src_start": 2.02,
+   "src_end": 2.47
+  },
+  {
+   "text": "everyone!",
+   "start": 0.567,
+   "end": 0.967,
+   "src_start": 2.5,
+   "src_end": 2.9
+  },
+  {
+   "text": "Today,",
+   "start": 1.007,
+   "end": 1.467,
+   "src_start": 2.94,
+   "src_end": 3.4
+  },
+  {
+   "text": "I",
+   "start": 1.467,
+   "end": 1.627,
+   "src_start": 3.4,
+   "src_end": 3.56
+  },
+  {
+   "text": "will",
+   "start": 1.627,
+   "end": 1.827,
+   "src_start": 3.56,
+   "src_end": 3.76
+  },
+  {
+   "text": "discuss",
+   "start": 1.827,
+   "end": 2.347,
+   "src_start": 3.76,
+   "src_end": 4.28
+  },
+  {
+   "text": "Section",
+   "start": 2.347,
+   "end": 2.867,
+   "src_start": 4.28,
+   "src_end": 4.8
+  },
+  {
+   "text": "4",
+   "start": 2.867,
+   "end": 3.267,
+   "src_start": 4.8,
+   "src_end": 5.2
+  },
+  {
+   "text": "of",
+   "start": 3.267,
+   "end": 3.427,
+   "src_start": 5.2,
+   "src_end": 5.36
+  },
+  {
+   "text": "the",
+   "start": 3.427,
+   "end": 3.667,
+   "src_start": 5.36,
+   "src_end": 5.6
+  },
+  {
+   "text": "Bill",
+   "start": 3.667,
+   "end": 3.947,
+   "src_start": 5.6,
+   "src_end": 5.88
+  },
+  {
+   "text": "of",
+   "start": 3.947,
+   "end": 4.187,
+   "src_start": 5.88,
+   "src_end": 6.12
+  },
+  {
+   "text": "Rights,",
+   "start": 4.187,
+   "end": 4.827,
+   "src_start": 6.12,
+   "src_end": 6.76
+  },
+  {
+   "text": "which",
+   "start": 4.827,
+   "end": 5.227,
+   "src_start": 6.76,
+   "src_end": 7.16
+  },
+  {
+   "text": "focuses",
+   "start": 5.227,
+   "end": 6.027,
+   "src_start": 7.16,
+   "src_end": 7.96
+  },
+  {
+   "text": "on",
+   "start": 6.027,
+   "end": 6.267,
+   "src_start": 7.96,
+   "src_end": 8.2
+  },
+  {
+   "text": "freedom",
+   "start": 6.267,
+   "end": 6.827,
+   "src_start": 8.2,
+   "src_end": 8.76
+  },
+  {
+   "text": "of",
+   "start": 6.827,
+   "end": 7.027,
+   "src_start": 8.76,
+   "src_end": 8.96
+  },
+  {
+   "text": "speech,",
+   "start": 7.027,
+   "end": 7.387,
+   "src_start": 8.96,
+   "src_end": 9.32
+  },
+  {
+   "text": "expression,",
+   "start": 7.747,
+   "end": 8.747,
+   "src_start": 9.68,
+   "src_end": 10.68
+  },
+  {
+   "text": "the",
+   "start": 8.747,
+   "end": 9.047,
+   "src_start": 10.68,
+   "src_end": 10.98
+  },
+  {
+   "text": "press,",
+   "start": 9.047,
+   "end": 9.467,
+   "src_start": 10.98,
+   "src_end": 11.4
+  },
+  {
+   "text": "assembly,",
+   "start": 9.467,
+   "end": 10.227,
+   "src_start": 11.4,
+   "src_end": 12.16
+  },
+  {
+   "text": "and",
+   "start": 10.227,
+   "end": 10.467,
+   "src_start": 12.16,
+   "src_end": 12.4
+  },
+  {
+   "text": "petition.",
+   "start": 10.467,
+   "end": 10.827,
+   "src_start": 12.4,
+   "src_end": 12.76
+  },
+  {
+   "text": "Section",
+   "start": 11.607,
+   "end": 12.167,
+   "src_start": 13.84,
+   "src_end": 14.4
+  },
+  {
+   "text": "4",
+   "start": 12.167,
+   "end": 12.607,
+   "src_start": 14.4,
+   "src_end": 14.84
+  },
+  {
+   "text": "protects",
+   "start": 12.607,
+   "end": 13.207,
+   "src_start": 14.84,
+   "src_end": 15.44
+  },
+  {
+   "text": "our",
+   "start": 13.207,
+   "end": 13.407,
+   "src_start": 15.44,
+   "src_end": 15.64
+  },
+  {
+   "text": "freedom",
+   "start": 13.407,
+   "end": 13.967,
+   "src_start": 15.64,
+   "src_end": 16.2
+  },
+  {
+   "text": "to",
+   "start": 13.967,
+   "end": 14.247,
+   "src_start": 16.2,
+   "src_end": 16.48
+  },
+  {
+   "text": "speak,",
+   "start": 14.247,
+   "end": 14.807,
+   "src_start": 16.48,
+   "src_end": 17.04
+  },
+  {
+   "text": "express",
+   "start": 14.807,
+   "end": 15.447,
+   "src_start": 17.04,
+   "src_end": 17.68
+  },
+  {
+   "text": "our",
+   "start": 15.447,
+   "end": 15.727,
+   "src_start": 17.68,
+   "src_end": 17.96
+  },
+  {
+   "text": "ideas,",
+   "start": 15.727,
+   "end": 16.367,
+   "src_start": 17.96,
+   "src_end": 18.6
+  },
+  {
+   "text": "and",
+   "start": 16.367,
+   "end": 16.607,
+   "src_start": 18.6,
+   "src_end": 18.84
+  },
+  {
+   "text": "share",
+   "start": 16.607,
+   "end": 16.847,
+   "src_start": 18.84,
+   "src_end": 19.08
+  },
+  {
+   "text": "information",
+   "start": 16.847,
+   "end": 17.327,
+   "src_start": 19.08,
+   "src_end": 19.56
+  },
+  {
+   "text": "through",
+   "start": 17.767,
+   "end": 17.847,
+   "src_start": 20.0,
+   "src_end": 20.08
+  },
+  {
+   "text": "the",
+   "start": 18.207,
+   "end": 18.447,
+   "src_start": 20.44,
+   "src_end": 20.68
+  },
+  {
+   "text": "press.",
+   "start": 18.447,
+   "end": 18.887,
+   "src_start": 20.68,
+   "src_end": 21.12
+  },
+  {
+   "text": "It",
+   "start": 18.887,
+   "end": 19.247,
+   "src_start": 21.12,
+   "src_end": 21.48
+  },
+  {
+   "text": "allows",
+   "start": 19.247,
+   "end": 19.807,
+   "src_start": 21.48,
+   "src_end": 22.04
+  },
+  {
+   "text": "us",
+   "start": 19.807,
+   "end": 20.087,
+   "src_start": 22.04,
+   "src_end": 22.32
+  },
+  {
+   "text": "to",
+   "start": 20.087,
+   "end": 20.247,
+   "src_start": 22.32,
+   "src_end": 22.48
+  },
+  {
+   "text": "share",
+   "start": 20.247,
+   "end": 20.607,
+   "src_start": 22.48,
+   "src_end": 22.84
+  },
+  {
+   "text": "our",
+   "start": 20.607,
+   "end": 20.927,
+   "src_start": 22.84,
+   "src_end": 23.16
+  },
+  {
+   "text": "opinions",
+   "start": 20.927,
+   "end": 21.687,
+   "src_start": 23.16,
+   "src_end": 23.92
+  },
+  {
+   "text": "freely.",
+   "start": 21.687,
+   "end": 22.047,
+   "src_start": 23.92,
+   "src_end": 24.28
+  },
+  {
+   "text": "It",
+   "start": 22.727,
+   "end": 23.047,
+   "src_start": 24.96,
+   "src_end": 25.28
+  },
+  {
+   "text": "also",
+   "start": 23.047,
+   "end": 23.367,
+   "src_start": 25.28,
+   "src_end": 25.6
+  },
+  {
+   "text": "protects",
+   "start": 23.367,
+   "end": 24.007,
+   "src_start": 25.6,
+   "src_end": 26.24
+  },
+  {
+   "text": "our",
+   "start": 24.007,
+   "end": 24.367,
+   "src_start": 26.24,
+   "src_end": 26.6
+  },
+  {
+   "text": "right",
+   "start": 24.367,
+   "end": 24.887,
+   "src_start": 26.6,
+   "src_end": 27.12
+  },
+  {
+   "text": "to",
+   "start": 24.887,
+   "end": 25.127,
+   "src_start": 27.12,
+   "src_end": 27.36
+  },
+  {
+   "text": "gather",
+   "start": 25.127,
+   "end": 25.647,
+   "src_start": 27.36,
+   "src_end": 27.88
+  },
+  {
+   "text": "peacefully",
+   "start": 25.647,
+   "end": 26.527,
+   "src_start": 27.88,
+   "src_end": 28.76
+  },
+  {
+   "text": "with",
+   "start": 26.527,
+   "end": 26.807,
+   "src_start": 28.76,
+   "src_end": 29.04
+  },
+  {
+   "text": "others",
+   "start": 26.807,
+   "end": 27.407,
+   "src_start": 29.04,
+   "src_end": 29.64
+  },
+  {
+   "text": "and",
+   "start": 27.407,
+   "end": 27.647,
+   "src_start": 29.64,
+   "src_end": 29.88
+  },
+  {
+   "text": "express",
+   "start": 27.647,
+   "end": 28.207,
+   "src_start": 29.88,
+   "src_end": 30.44
+  },
+  {
+   "text": "our",
+   "start": 28.207,
+   "end": 28.447,
+   "src_start": 30.44,
+   "src_end": 30.68
+  },
+  {
+   "text": "concerns",
+   "start": 28.447,
+   "end": 28.967,
+   "src_start": 30.68,
+   "src_end": 31.2
+  },
+  {
+   "text": "to",
+   "start": 28.967,
+   "end": 29.127,
+   "src_start": 31.2,
+   "src_end": 31.36
+  },
+  {
+   "text": "the",
+   "start": 29.127,
+   "end": 29.367,
+   "src_start": 31.36,
+   "src_end": 31.6
+  },
+  {
+   "text": "government",
+   "start": 29.367,
+   "end": 29.807,
+   "src_start": 31.6,
+   "src_end": 32.04
+  },
+  {
+   "text": "when",
+   "start": 30.2,
+   "end": 30.407,
+   "src_start": 32.6,
+   "src_end": 32.84
+  },
+  {
+   "text": "we",
+   "start": 30.407,
+   "end": 30.647,
+   "src_start": 32.84,
+   "src_end": 33.08
+  },
+  {
+   "text": "want",
+   "start": 30.647,
+   "end": 30.927,
+   "src_start": 33.08,
+   "src_end": 33.36
+  },
+  {
+   "text": "changes",
+   "start": 30.927,
+   "end": 31.567,
+   "src_start": 33.36,
+   "src_end": 34.0
+  },
+  {
+   "text": "in",
+   "start": 31.567,
+   "end": 31.767,
+   "src_start": 34.0,
+   "src_end": 34.2
+  },
+  {
+   "text": "our",
+   "start": 31.767,
+   "end": 32.127,
+   "src_start": 34.2,
+   "src_end": 34.56
+  },
+  {
+   "text": "community.",
+   "start": 32.127,
+   "end": 32.527,
+   "src_start": 34.56,
+   "src_end": 34.96
+  },
+  {
+   "text": "This",
+   "start": 32.9,
+   "end": 33.253,
+   "src_start": 35.76,
+   "src_end": 36.12
+  },
+  {
+   "text": "right",
+   "start": 33.253,
+   "end": 33.333,
+   "src_start": 36.12,
+   "src_end": 36.2
+  },
+  {
+   "text": "is",
+   "start": 33.733,
+   "end": 33.973,
+   "src_start": 36.6,
+   "src_end": 36.84
+  },
+  {
+   "text": "important",
+   "start": 33.973,
+   "end": 34.733,
+   "src_start": 36.84,
+   "src_end": 37.6
+  },
+  {
+   "text": "because",
+   "start": 34.733,
+   "end": 35.093,
+   "src_start": 37.6,
+   "src_end": 37.96
+  },
+  {
+   "text": "it",
+   "start": 35.093,
+   "end": 35.333,
+   "src_start": 37.96,
+   "src_end": 38.2
+  },
+  {
+   "text": "allows",
+   "start": 35.333,
+   "end": 35.893,
+   "src_start": 38.2,
+   "src_end": 38.76
+  },
+  {
+   "text": "us",
+   "start": 35.893,
+   "end": 35.973,
+   "src_start": 38.76,
+   "src_end": 38.84
+  },
+  {
+   "text": "to",
+   "start": 35.973,
+   "end": 36.237,
+   "src_start": 38.84,
+   "src_end": 39.104
+  },
+  {
+   "text": "speak",
+   "start": 36.237,
+   "end": 36.317,
+   "src_start": 39.104,
+   "src_end": 39.184
+  },
+  {
+   "text": "up,",
+   "start": 36.757,
+   "end": 37.077,
+   "src_start": 39.624,
+   "src_end": 39.944
+  },
+  {
+   "text": "share",
+   "start": 37.077,
+   "end": 37.517,
+   "src_start": 39.944,
+   "src_end": 40.384
+  },
+  {
+   "text": "our",
+   "start": 37.517,
+   "end": 37.877,
+   "src_start": 40.384,
+   "src_end": 40.744
+  },
+  {
+   "text": "thoughts,",
+   "start": 37.877,
+   "end": 38.397,
+   "src_start": 40.744,
+   "src_end": 41.264
+  },
+  {
+   "text": "and",
+   "start": 38.397,
+   "end": 38.677,
+   "src_start": 41.264,
+   "src_end": 41.544
+  },
+  {
+   "text": "help",
+   "start": 38.677,
+   "end": 38.757,
+   "src_start": 41.544,
+   "src_end": 41.624
+  },
+  {
+   "text": "build",
+   "start": 39.0,
+   "end": 39.404,
+   "src_start": 42.064,
+   "src_end": 42.504
+  },
+  {
+   "text": "a",
+   "start": 39.404,
+   "end": 39.604,
+   "src_start": 42.504,
+   "src_end": 42.704
+  },
+  {
+   "text": "better",
+   "start": 39.604,
+   "end": 40.004,
+   "src_start": 42.704,
+   "src_end": 43.104
+  },
+  {
+   "text": "society.",
+   "start": 40.004,
+   "end": 40.564,
+   "src_start": 43.104,
+   "src_end": 43.664
+  },
+  {
+   "text": "Remember,",
+   "start": 40.8,
+   "end": 41.577,
+   "src_start": 44.024,
+   "src_end": 44.944
+  },
+  {
+   "text": "we",
+   "start": 41.577,
+   "end": 41.777,
+   "src_start": 44.944,
+   "src_end": 45.144
+  },
+  {
+   "text": "have",
+   "start": 41.777,
+   "end": 42.057,
+   "src_start": 45.144,
+   "src_end": 45.424
+  },
+  {
+   "text": "freedom",
+   "start": 42.057,
+   "end": 42.737,
+   "src_start": 45.424,
+   "src_end": 46.104
+  },
+  {
+   "text": "of",
+   "start": 42.737,
+   "end": 42.977,
+   "src_start": 46.104,
+   "src_end": 46.344
+  },
+  {
+   "text": "expression,",
+   "start": 42.977,
+   "end": 43.817,
+   "src_start": 46.344,
+   "src_end": 47.184
+  },
+  {
+   "text": "but",
+   "start": 43.817,
+   "end": 44.057,
+   "src_start": 47.184,
+   "src_end": 47.424
+  },
+  {
+   "text": "we",
+   "start": 44.057,
+   "end": 44.297,
+   "src_start": 47.424,
+   "src_end": 47.664
+  },
+  {
+   "text": "must",
+   "start": 44.297,
+   "end": 44.617,
+   "src_start": 47.664,
+   "src_end": 47.984
+  },
+  {
+   "text": "also",
+   "start": 44.617,
+   "end": 44.977,
+   "src_start": 47.984,
+   "src_end": 48.344
+  },
+  {
+   "text": "respect",
+   "start": 44.977,
+   "end": 45.657,
+   "src_start": 48.344,
+   "src_end": 49.024
+  },
+  {
+   "text": "the",
+   "start": 45.657,
+   "end": 45.857,
+   "src_start": 49.024,
+   "src_end": 49.224
+  },
+  {
+   "text": "rights",
+   "start": 45.857,
+   "end": 46.377,
+   "src_start": 49.224,
+   "src_end": 49.744
+  },
+  {
+   "text": "of",
+   "start": 46.377,
+   "end": 46.457,
+   "src_start": 49.744,
+   "src_end": 49.824
+  },
+  {
+   "text": "others.",
+   "start": 46.817,
+   "end": 47.577,
+   "src_start": 50.184,
+   "src_end": 50.944
+  },
+  {
+   "text": "Thank",
+   "start": 47.577,
+   "end": 47.897,
+   "src_start": 50.944,
+   "src_end": 51.264
+  },
+  {
+   "text": "you!",
+   "start": 47.897,
+   "end": 48.297,
+   "src_start": 51.264,
+   "src_end": 51.664
+  }
+ ]
+}
