@@ -43,3 +43,11 @@ cd <project> && npx hyperframes render --quality high --output renders/final.mp4
 
 `build.py` also needs the fonts (Anton, Oswald, Kaushan Script from Google Fonts) in `assets/fonts/` and
 six grain tiles in `assets/grain/` (`ffmpeg -f lavfi -i color=c=gray:s=540x960 -vf noise=alls=80:allf=t+u -frames:v 6 g%d.png`).
+
+## Checks on the delivered file
+
+- 1080x1920, 30 fps, 48.5 s video and audio, H.264 at about 8 Mbps (48 MB); -16.0 LUFS integrated, -1.5 dBFS peak.
+- Music bed about 19 dB under the voice while he speaks, rising for the thank-you card.
+- Fresh transcription of the final mix keeps every English word; effects were moved off "doing", "helps"
+  and "thank you" after an earlier mix masked them.
+- Frames inspected at every section; text stays inside the frame, the split seam never crosses his face.

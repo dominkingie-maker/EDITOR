@@ -382,8 +382,8 @@
    "purpose": "RIGHT TO KNOW stamps"
   },
   {
-   "time": 11.227,
-   "level_db": -27,
+   "time": 11.577,
+   "level_db": -33,
    "purpose": "magnifier sweep"
   },
   {
@@ -468,17 +468,17 @@
   },
   {
    "time": 35.547,
-   "level_db": -20,
+   "level_db": -25,
    "purpose": "icon pops"
   },
   {
    "time": 36.667,
-   "level_db": -20,
+   "level_db": -25,
    "purpose": "icon pops"
   },
   {
    "time": 37.827,
-   "level_db": -20,
+   "level_db": -25,
    "purpose": "icon pops"
   },
   {
@@ -488,23 +488,23 @@
   },
   {
    "time": 40.897,
-   "level_db": -24,
+   "level_db": -27,
    "purpose": "closing line 1"
   },
   {
    "time": 42.497,
-   "level_db": -22,
+   "level_db": -27,
    "purpose": "closing line 2"
   },
   {
    "time": 43.697,
-   "level_db": -22,
+   "level_db": -27,
    "purpose": "closing line 3"
   },
   {
-   "time": 45.25,
-   "level_db": -19,
-   "purpose": "tear to the thank-you card"
+   "time": 45.36,
+   "level_db": -21,
+   "purpose": "tear to the thank-you card (after the last word)"
   },
   {
    "time": 45.65,
