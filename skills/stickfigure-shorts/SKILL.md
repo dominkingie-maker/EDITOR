@@ -27,7 +27,10 @@ compose it; missing timings → choose them. Story mode builds on `scripts/story
 faces / tremble / head moves, front-view lifting rig, boxes, barbells, bench, road with a hill, finish
 arch, signs, camera moves, darkness, impact effects, caption helpers) and `scripts/score.py` (original
 music). Staging ideas: `references/story-recipes.md`; helper list: `references/story-api.md`;
-complete episode: `assets/story_example/`.
+six complete episodes with their music: `assets/story_examples/` (start with its README — it says
+which one to borrow from for each kind of beat). Before the first render in a new output folder with no
+`stickfigure_history.json`, copy `assets/channel_history.json` there under that name so the variety rules
+know every episode already published.
 
 **Music in both modes:** unless the user supplies a track, write `music_score.py` and render it with
 `python3 SKILL_DIR/scripts/score.py music_score.py --out music.wav`, then pass `--music music.wav` to

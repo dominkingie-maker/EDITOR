@@ -8,7 +8,9 @@ One character, one arc, 30–42 s: **hook → struggle → low point → turning
 Building blocks: `scripts/storykit.py` (rigs, poses, props, worlds, camera, effects, captions),
 `scripts/score.py` (numpy music synth), `scripts/contact.py` (frame sheets). One-page list of every
 helper: `references/story-api.md`. Staging techniques per beat: `references/story-recipes.md`.
-Complete worked episode: `assets/story_example/episode.py` + `music_score.py` (9 scenes, 41.8 s).
+Complete episodes: `assets/story_examples/` — six finished stories with their music and a README that maps
+beats to the example that does them (`keep-going` is the cleanest storykit reference, 9 scenes, 41.8 s).
+Seed a new output folder's history with `assets/channel_history.json` (copy as `stickfigure_history.json`).
 
 ## 1. Beat sheet
 Split the story into 6–9 scenes, one beat each. If the user gave timings ("0–3 seconds: …"), match

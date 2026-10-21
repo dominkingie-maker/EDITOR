@@ -1,0 +1,224 @@
+[
+ {
+  "date": "2026-10-19",
+  "video": "you-start-to-become-strong.mp4",
+  "title": "You Start To Become Strong",
+  "scenes": [
+   {
+    "template": "custom:gym_enter",
+    "caption": "A skinny guy walked into the gym. / Everyone was stronger."
+   },
+   {
+    "template": "custom:bar_wont_move",
+    "caption": "He tried the heavy bar. / It didn't move."
+   },
+   {
+    "template": "custom:effortless_others",
+    "caption": "They made it look effortless. / He headed for the exit."
+   },
+   {
+    "template": "custom:tiny_dumbbell",
+    "caption": "Then he noticed a tiny dumbbell. / Almost embarrassingly easy."
+   },
+   {
+    "template": "custom:days_montage",
+    "caption": "So he came back. / A little heavier every time."
+   },
+   {
+    "template": "custom:same_bar_lift",
+    "caption": "The same bar. One deep breath. / Nobody cheered. He simply smiled."
+   },
+   {
+    "template": "custom:final_message",
+    "caption": "YOU DON'T HAVE TO BE STRONG TO START. / YOU START TO BECOME STRONG."
+   }
+  ]
+ },
+ {
+  "date": "2026-10-20",
+  "video": "you-can-care-without-carrying-everything.mp4",
+  "title": "You Can Care Without Carrying Everything",
+  "scenes": [
+   {
+    "template": "custom:box_slam_hook",
+    "caption": "He was already struggling. / They handed him more."
+   },
+   {
+    "template": "custom:carry_for_all",
+    "caption": "He carried everyone's burdens. / He didn't want to disappoint them."
+   },
+   {
+    "template": "custom:stack_tips",
+    "caption": "Every time someone asked, / he said yes."
+   },
+   {
+    "template": "custom:empty_hands",
+    "caption": "But helping everyone / was wearing him down."
+   },
+   {
+    "template": "custom:palm_no",
+    "caption": "This time, he said no. / They could carry their own."
+   },
+   {
+    "template": "custom:own_box",
+    "caption": "He still cared. / He just needed a limit."
+   },
+   {
+    "template": "custom:relaxed_close",
+    "caption": "YOU CAN CARE / WITHOUT CARRYING EVERYTHING."
+   }
+  ]
+ },
+ {
+  "date": "2026-10-20",
+  "video": "one-more-favor.mp4",
+  "title": "One More Favor",
+  "scenes": [
+   {
+    "template": "custom:face_box_hook",
+    "caption": "One more favor. / He could barely stand."
+   },
+   {
+    "template": "custom:pass_the_bench",
+    "caption": "He needed a break. / But he kept saying yes."
+   },
+   {
+    "template": "custom:offered_another",
+    "caption": "Even when he was exhausted."
+   },
+   {
+    "template": "custom:noticed_cost",
+    "caption": "This time, he noticed / what it was costing him."
+   },
+   {
+    "template": "custom:let_them_be",
+    "caption": "They weren't happy. / He let them be disappointed."
+   },
+   {
+    "template": "custom:bench_rest",
+    "caption": "He finally gave himself a break. / YOU'RE ALLOWED TO HAVE LIMITS."
+   }
+  ]
+ },
+ {
+  "date": "2026-10-20",
+  "video": "how-close-you-are.mp4",
+  "title": "How Close You Are",
+  "scenes": [
+   {
+    "template": "custom:knees_hit_hook",
+    "caption": "His legs were shaking. / Then they gave out."
+   },
+   {
+    "template": "custom:no_finish_in_sight",
+    "caption": "He looked ahead. / No finish line in sight."
+   },
+   {
+    "template": "custom:sits_eyes_closed",
+    "caption": "Exhausted, he sat down. / And closed his eyes."
+   },
+   {
+    "template": "custom:crane_reveal",
+    "caption": "Just beyond that hill... / only a few steps away."
+   },
+   {
+    "template": "custom:stands_again",
+    "caption": "He couldn't see it. / But he stood up anyway."
+   },
+   {
+    "template": "custom:crest_and_cross",
+    "caption": "One step. Then another. / There it was."
+   },
+   {
+    "template": "custom:under_the_line",
+    "caption": ""
+   },
+   {
+    "template": "custom:final_message",
+    "caption": "YOU CAN'T ALWAYS SEE / HOW CLOSE YOU ARE."
+   }
+  ]
+ },
+ {
+  "date": "2026-10-20",
+  "video": "keep-going.mp4",
+  "title": "Keep Going",
+  "scenes": [
+   {
+    "template": "custom:sign_stumble_hook",
+    "caption": "The sign said he was close. / All he could see was more road."
+   },
+   {
+    "template": "custom:falls_twice",
+    "caption": "His legs began to shake. / He fell. Got up. Fell again."
+   },
+   {
+    "template": "custom:ready_to_give_up",
+    "caption": "Defeated, he sat down. / Ready to give up."
+   },
+   {
+    "template": "custom:crane_reveal",
+    "caption": "Just beyond the hill... / He had no idea how close he was."
+   },
+   {
+    "template": "custom:trembling_hands",
+    "caption": "He looked at his trembling hands. / Then slowly pushed himself up."
+   },
+   {
+    "template": "custom:one_step_then_another",
+    "caption": "This time, he didn't run. / One step. Then another..."
+   },
+   {
+    "template": "custom:smile_and_cross",
+    "caption": "There it was. / He smiled."
+   },
+   {
+    "template": "custom:pull_away",
+    "caption": ""
+   },
+   {
+    "template": "custom:keep_going_card",
+    "caption": "YOU CAN'T ALWAYS SEE HOW CLOSE YOU ARE. / KEEP GOING."
+   }
+  ]
+ },
+ {
+  "date": "2026-10-21",
+  "video": "discipline-makes-no-noise.mp4",
+  "title": "Discipline Makes No Noise",
+  "scenes": [
+   {
+    "template": "hook-flashforward-the-pass",
+    "caption": "They looked back and laughed. / He was way behind."
+   },
+   {
+    "template": "custom:trip_and_fall",
+    "caption": "He tried to catch up. / He tripped and fell."
+   },
+   {
+    "template": "custom:next_morning",
+    "caption": "The next morning, he came back. / He ran. And fell again."
+   },
+   {
+    "template": "custom:days_pass",
+    "caption": "Days passed. / But every morning, he returned."
+   },
+   {
+    "template": "custom:they_return",
+    "caption": "One day, the two came back. / They started running."
+   },
+   {
+    "template": "custom:the_pass",
+    "caption": "Suddenly, someone passed them. / The same skinny stickman."
+   },
+   {
+    "template": "custom:no_look_back",
+    "caption": "Only now, / he didn't even look back."
+   },
+   {
+    "template": "custom:message_card",
+    "caption": "DISCIPLINE MAKES NO NOISE. / RESULTS DO."
+   }
+  ]
+ }
+]
