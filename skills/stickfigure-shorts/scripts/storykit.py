@@ -93,7 +93,7 @@ def fig(ctx, x, ground, s, pose, col=(1, 1, 1), a=1.0, d=1, lw=0.22, head_dx=0.0
     head_dx    move the head sideways (head shake, peeking out from behind something)
     knee_shake / hand_shake  px of tremble at knees / hands
     face       None | 'strain' | 'closed' | 'open' | 'wide' | 'smile'  (only reads at zoom ≥ ~1.6)
-    Returns joints: head, hand_f, hand_b, knees, hip, r."""
+    Returns joints: head, hand_f, hand_b, knees, feet, hip, r."""
     T, L1, L2, A1, A2 = s, 0.56 * s, 0.56 * s, 0.46 * s, 0.44 * s
     r = 0.30 * s
     hy = ground - lerp(L1 + L2, 0.20 * s, pose["hip"])
@@ -119,14 +119,14 @@ def fig(ctx, x, ground, s, pose, col=(1, 1, 1), a=1.0, d=1, lw=0.22, head_dx=0.0
         return p1, p2
 
     _, hand_b = limb(sh, pose["ua_b"], A1, pose["fa_b"], A2, 0.5, hand_shake * 0.7, -hand_shake)
-    knee_b, _ = limb(hip, pose["th_b"], L1, pose["sh_b"], L2, 0.5, -knee_shake)
+    knee_b, foot_b = limb(hip, pose["th_b"], L1, pose["sh_b"], L2, 0.5, -knee_shake)
     ctx.set_source_rgba(*col, a); ctx.move_to(*hip); ctx.line_to(*neck); ctx.stroke()
-    knee_f, _ = limb(hip, pose["th_f"], L1, pose["sh_f"], L2, 1.0, knee_shake)
+    knee_f, foot_f = limb(hip, pose["th_f"], L1, pose["sh_f"], L2, 1.0, knee_shake)
     _, hand_f = limb(sh, pose["ua_f"], A1, pose["fa_f"], A2, 1.0, -hand_shake, hand_shake * 0.8)
     ctx.set_source_rgba(*col, a); ctx.arc(*head, r, 0, 2 * math.pi); ctx.fill()
     if face:
         side_face(ctx, head, r, d, face, a)
-    return dict(head=head, hand_f=hand_f, hand_b=hand_b, knees=(knee_f, knee_b), hip=hip, r=r)
+    return dict(head=head, hand_f=hand_f, hand_b=hand_b, knees=(knee_f, knee_b), feet=(foot_f, foot_b), hip=hip, r=r)
 
 
 def side_face(ctx, head, r, d, face, a=1.0):

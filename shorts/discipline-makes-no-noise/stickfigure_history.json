@@ -1,0 +1,41 @@
+[
+ {
+  "date": "2026-10-21",
+  "video": "discipline-makes-no-noise.mp4",
+  "title": "Discipline Makes No Noise",
+  "scenes": [
+   {
+    "template": "hook-flashforward-the-pass",
+    "caption": "They looked back and laughed. / He was way behind."
+   },
+   {
+    "template": "custom:trip_and_fall",
+    "caption": "He tried to catch up. / He tripped and fell."
+   },
+   {
+    "template": "custom:next_morning",
+    "caption": "The next morning, he came back. / He ran. And fell again."
+   },
+   {
+    "template": "custom:days_pass",
+    "caption": "Days passed. / But every morning, he returned."
+   },
+   {
+    "template": "custom:they_return",
+    "caption": "One day, the two came back. / They started running."
+   },
+   {
+    "template": "custom:the_pass",
+    "caption": "Suddenly, someone passed them. / The same skinny stickman."
+   },
+   {
+    "template": "custom:no_look_back",
+    "caption": "Only now, / he didn't even look back."
+   },
+   {
+    "template": "custom:message_card",
+    "caption": "DISCIPLINE MAKES NO NOISE. / RESULTS DO."
+   }
+  ]
+ }
+]

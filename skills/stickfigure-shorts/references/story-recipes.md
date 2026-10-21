@@ -125,3 +125,4 @@ slightly bigger `build` each stage. Caption: "So he came back." / "A little heav
 | You can care without carrying everything (30 s) | box flies onto a swaying tower, slam | stack tips · palm "no" · others carry their own | his own small box |
 | One more favor (30 s) | face close-up, box drops over it | bench he can't stop at · knees/bench halos | bench glow while resting |
 | How close you are / Keep going (35–42 s) | knees slam the road · FINISH LINE AHEAD sign | crane reveal · darkness · steps · crest | finish arch, confetti |
+| Discipline makes no noise (37 s) | flash-forward: he blazes past them → rewind | laughed at · falls · DAY montage (rain, worn shoes, night) · the pass | gold trail as he passes, RESULTS DO. |

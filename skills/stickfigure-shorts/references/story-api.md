@@ -14,7 +14,7 @@ LEAP KNEEL LIE CARRY THINK HEAD_IN_HANDS SIT_CHAIR`. Colours `GOLD TEAL RED`.
 | Poses | `TIRED BUCKLE SQUAT_CARRY REACH_FLOOR FALL HANDS_DOWN KNEEL_UP ONE_KNEE HALF_UP SIT_UP SIT_DOWN LOOK_HANDS SLUMP_SIT REST_SIT` |
 | Arm sets (`pose_with(p, **ARMS)`) | `CARRY_ARMS HUG_ARMS HOLD_OUT POINT PALM_UP THROWN` |
 | Pose helpers | `pose_with(p, **kw)` · `struggle_run(ph, lean)` · `carry_walk(ph, lean, arms)` · `slump_walk(ph)` · `hold_curl(k)` · `steps(t, starts, dur, stride) → (dist, ph)` |
-| Side figure | `fig(ctx, x, ground, s, pose, col, a, d, lw, head_dx, knee_shake, hand_shake, face) → {head, hand_f, hand_b, knees, hip, r}`; faces `strain closed open wide smile` |
+| Side figure | `fig(ctx, x, ground, s, pose, col, a, d, lw, head_dx, knee_shake, hand_shake, face) → {head, hand_f, hand_b, knees, feet, hip, r}`; faces `strain closed open wide smile` |
 | Front rig | `rig(x, ground, s, hip_h, feet, hands, build, nod, breath, elbow)` · `draw_body(ctx, j, col, a, smile)` · `deadlift_hip / deadlift_top` · `ik` · `stand_h` · `shoulder_w` · `front_face` |
 | Placement | `probe(fn, *args)` (joints without drawing) · `layered(ctx, draw_fig, draw_props)` (props behind a figure) |
 | Objects | `box stack barbell dumbbell bench road_sign finish_arch hanging_lamp` (+ `props.py`: sun moon star cloud rain tree trunk grass flower rock hill waves house lamp_post ladder signpost train boat phone coin heart key lock bird flame arrow speech_bubble thought_bubble trophy book backpack) |
