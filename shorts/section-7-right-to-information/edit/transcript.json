@@ -1,0 +1,972 @@
+{
+ "text": "Everyone! I'm Rogie Domin, and today, let's talk about Bill of Rights Section 7, or the Right to Information. So basically, this means that every Filipino citizen has the right to know what our government is doing, especially when it involves public money. For example, let's say na atong gobyerno nag-allocate ug 10 million pesos para sa construction sa road. Of course, we have the right to ask kung asa padulong ang kwarta, giunsa ni siya paggasto, and whether the project is actually being completed. But remember, this right has limitations because some government information is confidential and protected by law. So, why is this important? Well, it promotes transparency, accountability, and helps prevent corruption. At the end of the day, the government serves the people, and we have the right to know how it operates. Thank you!",
+ "audio_duration_secs": 45.5,
+ "words": [
+  {
+   "text": "Everyone!",
+   "start": 0.0,
+   "end": 0.4,
+   "src_start": 0.0,
+   "src_end": 0.4
+  },
+  {
+   "text": "I'm",
+   "start": 0.4,
+   "end": 0.8,
+   "src_start": 0.4,
+   "src_end": 0.8
+  },
+  {
+   "text": "Rogie",
+   "start": 0.8,
+   "end": 1.2,
+   "src_start": 0.8,
+   "src_end": 1.2
+  },
+  {
+   "text": "Domin,",
+   "start": 1.2,
+   "end": 1.64,
+   "src_start": 1.2,
+   "src_end": 1.64
+  },
+  {
+   "text": "and",
+   "start": 1.64,
+   "end": 1.8,
+   "src_start": 1.64,
+   "src_end": 1.8
+  },
+  {
+   "text": "today,",
+   "start": 1.8,
+   "end": 2.173,
+   "src_start": 1.8,
+   "src_end": 2.173
+  },
+  {
+   "text": "let's",
+   "start": 2.173,
+   "end": 2.547,
+   "src_start": 2.173,
+   "src_end": 2.547
+  },
+  {
+   "text": "talk",
+   "start": 2.547,
+   "end": 2.96,
+   "src_start": 2.547,
+   "src_end": 2.96
+  },
+  {
+   "text": "about",
+   "start": 2.96,
+   "end": 3.28,
+   "src_start": 2.96,
+   "src_end": 3.28
+  },
+  {
+   "text": "Bill",
+   "start": 3.28,
+   "end": 3.48,
+   "src_start": 3.28,
+   "src_end": 3.48
+  },
+  {
+   "text": "of",
+   "start": 3.48,
+   "end": 3.68,
+   "src_start": 3.48,
+   "src_end": 3.68
+  },
+  {
+   "text": "Rights",
+   "start": 3.68,
+   "end": 4.04,
+   "src_start": 3.68,
+   "src_end": 4.04
+  },
+  {
+   "text": "Section",
+   "start": 4.04,
+   "end": 4.48,
+   "src_start": 4.04,
+   "src_end": 4.48
+  },
+  {
+   "text": "7,",
+   "start": 4.48,
+   "end": 4.84,
+   "src_start": 4.48,
+   "src_end": 4.84
+  },
+  {
+   "text": "or",
+   "start": 4.84,
+   "end": 4.92,
+   "src_start": 4.84,
+   "src_end": 4.92
+  },
+  {
+   "text": "the",
+   "start": 4.92,
+   "end": 5.08,
+   "src_start": 4.92,
+   "src_end": 5.08
+  },
+  {
+   "text": "Right",
+   "start": 5.08,
+   "end": 5.32,
+   "src_start": 5.08,
+   "src_end": 5.32
+  },
+  {
+   "text": "to",
+   "start": 5.32,
+   "end": 5.4,
+   "src_start": 5.32,
+   "src_end": 5.4
+  },
+  {
+   "text": "Information.",
+   "start": 5.4,
+   "end": 5.84,
+   "src_start": 5.4,
+   "src_end": 5.84
+  },
+  {
+   "text": "So",
+   "start": 6.267,
+   "end": 6.387,
+   "src_start": 6.48,
+   "src_end": 6.72
+  },
+  {
+   "text": "basically,",
+   "start": 6.387,
+   "end": 7.107,
+   "src_start": 6.72,
+   "src_end": 7.44
+  },
+  {
+   "text": "this",
+   "start": 7.107,
+   "end": 7.347,
+   "src_start": 7.44,
+   "src_end": 7.68
+  },
+  {
+   "text": "means",
+   "start": 7.347,
+   "end": 7.627,
+   "src_start": 7.68,
+   "src_end": 7.96
+  },
+  {
+   "text": "that",
+   "start": 7.627,
+   "end": 7.827,
+   "src_start": 7.96,
+   "src_end": 8.16
+  },
+  {
+   "text": "every",
+   "start": 7.827,
+   "end": 8.147,
+   "src_start": 8.16,
+   "src_end": 8.48
+  },
+  {
+   "text": "Filipino",
+   "start": 8.147,
+   "end": 8.627,
+   "src_start": 8.48,
+   "src_end": 8.96
+  },
+  {
+   "text": "citizen",
+   "start": 8.627,
+   "end": 9.107,
+   "src_start": 8.96,
+   "src_end": 9.44
+  },
+  {
+   "text": "has",
+   "start": 9.107,
+   "end": 9.267,
+   "src_start": 9.44,
+   "src_end": 9.6
+  },
+  {
+   "text": "the",
+   "start": 9.267,
+   "end": 9.387,
+   "src_start": 9.6,
+   "src_end": 9.72
+  },
+  {
+   "text": "right",
+   "start": 9.387,
+   "end": 9.587,
+   "src_start": 9.72,
+   "src_end": 9.92
+  },
+  {
+   "text": "to",
+   "start": 9.587,
+   "end": 9.747,
+   "src_start": 9.92,
+   "src_end": 10.08
+  },
+  {
+   "text": "know",
+   "start": 9.747,
+   "end": 10.027,
+   "src_start": 10.08,
+   "src_end": 10.36
+  },
+  {
+   "text": "what",
+   "start": 10.027,
+   "end": 10.307,
+   "src_start": 10.36,
+   "src_end": 10.64
+  },
+  {
+   "text": "our",
+   "start": 10.307,
+   "end": 10.387,
+   "src_start": 10.64,
+   "src_end": 10.72
+  },
+  {
+   "text": "government",
+   "start": 10.747,
+   "end": 11.067,
+   "src_start": 11.08,
+   "src_end": 11.4
+  },
+  {
+   "text": "is",
+   "start": 11.067,
+   "end": 11.227,
+   "src_start": 11.4,
+   "src_end": 11.56
+  },
+  {
+   "text": "doing,",
+   "start": 11.227,
+   "end": 11.827,
+   "src_start": 11.56,
+   "src_end": 12.16
+  },
+  {
+   "text": "especially",
+   "start": 11.827,
+   "end": 12.587,
+   "src_start": 12.16,
+   "src_end": 12.92
+  },
+  {
+   "text": "when",
+   "start": 12.587,
+   "end": 12.787,
+   "src_start": 12.92,
+   "src_end": 13.12
+  },
+  {
+   "text": "it",
+   "start": 12.787,
+   "end": 12.987,
+   "src_start": 13.12,
+   "src_end": 13.32
+  },
+  {
+   "text": "involves",
+   "start": 12.987,
+   "end": 13.507,
+   "src_start": 13.32,
+   "src_end": 13.84
+  },
+  {
+   "text": "public",
+   "start": 13.507,
+   "end": 13.947,
+   "src_start": 13.84,
+   "src_end": 14.28
+  },
+  {
+   "text": "money.",
+   "start": 13.947,
+   "end": 14.467,
+   "src_start": 14.28,
+   "src_end": 14.8
+  },
+  {
+   "text": "For",
+   "start": 14.467,
+   "end": 14.627,
+   "src_start": 14.8,
+   "src_end": 14.96
+  },
+  {
+   "text": "example,",
+   "start": 14.627,
+   "end": 15.147,
+   "src_start": 14.96,
+   "src_end": 15.48
+  },
+  {
+   "text": "let's",
+   "start": 15.489,
+   "end": 15.649,
+   "src_start": 16.156,
+   "src_end": 16.316
+  },
+  {
+   "text": "say",
+   "start": 15.649,
+   "end": 15.809,
+   "src_start": 16.316,
+   "src_end": 16.476
+  },
+  {
+   "text": "na",
+   "start": 15.809,
+   "end": 16.097,
+   "src_start": 16.476,
+   "src_end": 16.764
+  },
+  {
+   "text": "atong",
+   "start": 16.097,
+   "end": 16.385,
+   "src_start": 16.764,
+   "src_end": 17.052
+  },
+  {
+   "text": "gobyerno",
+   "start": 16.385,
+   "end": 16.673,
+   "src_start": 17.052,
+   "src_end": 17.34
+  },
+  {
+   "text": "nag-allocate",
+   "start": 16.673,
+   "end": 16.961,
+   "src_start": 17.34,
+   "src_end": 17.628
+  },
+  {
+   "text": "ug",
+   "start": 16.961,
+   "end": 17.329,
+   "src_start": 17.628,
+   "src_end": 17.996
+  },
+  {
+   "text": "10",
+   "start": 17.329,
+   "end": 17.489,
+   "src_start": 17.996,
+   "src_end": 18.156
+  },
+  {
+   "text": "million",
+   "start": 17.489,
+   "end": 17.809,
+   "src_start": 18.156,
+   "src_end": 18.476
+  },
+  {
+   "text": "pesos",
+   "start": 17.809,
+   "end": 18.209,
+   "src_start": 18.476,
+   "src_end": 18.876
+  },
+  {
+   "text": "para",
+   "start": 18.209,
+   "end": 18.449,
+   "src_start": 18.876,
+   "src_end": 19.116
+  },
+  {
+   "text": "sa",
+   "start": 18.449,
+   "end": 18.649,
+   "src_start": 19.116,
+   "src_end": 19.316
+  },
+  {
+   "text": "construction",
+   "start": 18.649,
+   "end": 19.049,
+   "src_start": 19.316,
+   "src_end": 19.716
+  },
+  {
+   "text": "sa",
+   "start": 19.049,
+   "end": 19.169,
+   "src_start": 19.716,
+   "src_end": 19.836
+  },
+  {
+   "text": "road.",
+   "start": 19.169,
+   "end": 19.369,
+   "src_start": 19.836,
+   "src_end": 20.036
+  },
+  {
+   "text": "Of",
+   "start": 19.496,
+   "end": 19.736,
+   "src_start": 20.396,
+   "src_end": 20.636
+  },
+  {
+   "text": "course,",
+   "start": 19.736,
+   "end": 19.816,
+   "src_start": 20.636,
+   "src_end": 20.716
+  },
+  {
+   "text": "we",
+   "start": 20.296,
+   "end": 20.496,
+   "src_start": 21.196,
+   "src_end": 21.396
+  },
+  {
+   "text": "have",
+   "start": 20.496,
+   "end": 20.656,
+   "src_start": 21.396,
+   "src_end": 21.556
+  },
+  {
+   "text": "the",
+   "start": 20.656,
+   "end": 20.776,
+   "src_start": 21.556,
+   "src_end": 21.676
+  },
+  {
+   "text": "right",
+   "start": 20.776,
+   "end": 20.936,
+   "src_start": 21.676,
+   "src_end": 21.836
+  },
+  {
+   "text": "to",
+   "start": 20.936,
+   "end": 21.096,
+   "src_start": 21.836,
+   "src_end": 21.996
+  },
+  {
+   "text": "ask",
+   "start": 21.096,
+   "end": 21.336,
+   "src_start": 21.996,
+   "src_end": 22.236
+  },
+  {
+   "text": "kung",
+   "start": 21.336,
+   "end": 21.63,
+   "src_start": 22.236,
+   "src_end": 22.53
+  },
+  {
+   "text": "asa",
+   "start": 21.63,
+   "end": 21.923,
+   "src_start": 22.53,
+   "src_end": 22.823
+  },
+  {
+   "text": "padulong",
+   "start": 21.923,
+   "end": 22.216,
+   "src_start": 22.823,
+   "src_end": 23.116
+  },
+  {
+   "text": "ang",
+   "start": 22.216,
+   "end": 22.51,
+   "src_start": 23.116,
+   "src_end": 23.41
+  },
+  {
+   "text": "kwarta,",
+   "start": 22.51,
+   "end": 22.803,
+   "src_start": 23.41,
+   "src_end": 23.703
+  },
+  {
+   "text": "giunsa",
+   "start": 22.803,
+   "end": 23.096,
+   "src_start": 23.703,
+   "src_end": 23.996
+  },
+  {
+   "text": "ni",
+   "start": 23.096,
+   "end": 23.39,
+   "src_start": 23.996,
+   "src_end": 24.29
+  },
+  {
+   "text": "siya",
+   "start": 23.39,
+   "end": 23.683,
+   "src_start": 24.29,
+   "src_end": 24.583
+  },
+  {
+   "text": "paggasto,",
+   "start": 23.683,
+   "end": 24.136,
+   "src_start": 24.583,
+   "src_end": 25.036
+  },
+  {
+   "text": "and",
+   "start": 24.136,
+   "end": 24.376,
+   "src_start": 25.036,
+   "src_end": 25.276
+  },
+  {
+   "text": "whether",
+   "start": 24.376,
+   "end": 24.656,
+   "src_start": 25.276,
+   "src_end": 25.556
+  },
+  {
+   "text": "the",
+   "start": 24.656,
+   "end": 24.776,
+   "src_start": 25.556,
+   "src_end": 25.676
+  },
+  {
+   "text": "project",
+   "start": 24.776,
+   "end": 25.176,
+   "src_start": 25.676,
+   "src_end": 26.076
+  },
+  {
+   "text": "is",
+   "start": 25.136,
+   "end": 25.296,
+   "src_start": 26.036,
+   "src_end": 26.196
+  },
+  {
+   "text": "actually",
+   "start": 25.296,
+   "end": 25.736,
+   "src_start": 26.196,
+   "src_end": 26.636
+  },
+  {
+   "text": "being",
+   "start": 25.736,
+   "end": 25.976,
+   "src_start": 26.636,
+   "src_end": 26.876
+  },
+  {
+   "text": "completed.",
+   "start": 25.976,
+   "end": 26.376,
+   "src_start": 26.876,
+   "src_end": 27.276
+  },
+  {
+   "text": "But",
+   "start": 26.633,
+   "end": 26.783,
+   "src_start": 27.716,
+   "src_end": 27.916
+  },
+  {
+   "text": "remember,",
+   "start": 26.783,
+   "end": 27.583,
+   "src_start": 27.916,
+   "src_end": 28.716
+  },
+  {
+   "text": "this",
+   "start": 27.583,
+   "end": 27.863,
+   "src_start": 28.716,
+   "src_end": 28.996
+  },
+  {
+   "text": "right",
+   "start": 27.863,
+   "end": 28.13,
+   "src_start": 28.996,
+   "src_end": 29.263
+  },
+  {
+   "text": "has",
+   "start": 28.13,
+   "end": 28.397,
+   "src_start": 29.263,
+   "src_end": 29.53
+  },
+  {
+   "text": "limitations",
+   "start": 28.397,
+   "end": 28.943,
+   "src_start": 29.53,
+   "src_end": 30.076
+  },
+  {
+   "text": "because",
+   "start": 28.943,
+   "end": 29.263,
+   "src_start": 30.076,
+   "src_end": 30.396
+  },
+  {
+   "text": "some",
+   "start": 29.263,
+   "end": 29.503,
+   "src_start": 30.396,
+   "src_end": 30.636
+  },
+  {
+   "text": "government",
+   "start": 29.503,
+   "end": 29.943,
+   "src_start": 30.636,
+   "src_end": 31.076
+  },
+  {
+   "text": "information",
+   "start": 29.943,
+   "end": 30.543,
+   "src_start": 31.076,
+   "src_end": 31.676
+  },
+  {
+   "text": "is",
+   "start": 30.543,
+   "end": 30.663,
+   "src_start": 31.676,
+   "src_end": 31.796
+  },
+  {
+   "text": "confidential",
+   "start": 30.663,
+   "end": 31.383,
+   "src_start": 31.796,
+   "src_end": 32.516
+  },
+  {
+   "text": "and",
+   "start": 31.383,
+   "end": 31.543,
+   "src_start": 32.516,
+   "src_end": 32.676
+  },
+  {
+   "text": "protected",
+   "start": 31.543,
+   "end": 32.023,
+   "src_start": 32.676,
+   "src_end": 33.156
+  },
+  {
+   "text": "by",
+   "start": 32.023,
+   "end": 32.223,
+   "src_start": 33.156,
+   "src_end": 33.356
+  },
+  {
+   "text": "law.",
+   "start": 32.223,
+   "end": 32.463,
+   "src_start": 33.356,
+   "src_end": 33.596
+  },
+  {
+   "text": "So,",
+   "start": 32.823,
+   "end": 33.103,
+   "src_start": 33.956,
+   "src_end": 34.236
+  },
+  {
+   "text": "why",
+   "start": 33.103,
+   "end": 33.303,
+   "src_start": 34.236,
+   "src_end": 34.436
+  },
+  {
+   "text": "is",
+   "start": 33.303,
+   "end": 33.463,
+   "src_start": 34.436,
+   "src_end": 34.596
+  },
+  {
+   "text": "this",
+   "start": 33.463,
+   "end": 33.623,
+   "src_start": 34.596,
+   "src_end": 34.756
+  },
+  {
+   "text": "important?",
+   "start": 33.623,
+   "end": 34.354,
+   "src_start": 34.756,
+   "src_end": 35.487
+  },
+  {
+   "text": "Well,",
+   "start": 34.354,
+   "end": 34.367,
+   "src_start": 35.487,
+   "src_end": 35.567
+  },
+  {
+   "text": "it",
+   "start": 34.907,
+   "end": 35.147,
+   "src_start": 36.207,
+   "src_end": 36.447
+  },
+  {
+   "text": "promotes",
+   "start": 35.147,
+   "end": 35.547,
+   "src_start": 36.447,
+   "src_end": 36.847
+  },
+  {
+   "text": "transparency,",
+   "start": 35.547,
+   "end": 36.667,
+   "src_start": 36.847,
+   "src_end": 37.967
+  },
+  {
+   "text": "accountability,",
+   "start": 36.667,
+   "end": 37.627,
+   "src_start": 37.967,
+   "src_end": 38.927
+  },
+  {
+   "text": "and",
+   "start": 37.627,
+   "end": 37.827,
+   "src_start": 38.927,
+   "src_end": 39.127
+  },
+  {
+   "text": "helps",
+   "start": 37.827,
+   "end": 38.147,
+   "src_start": 39.127,
+   "src_end": 39.447
+  },
+  {
+   "text": "prevent",
+   "start": 38.107,
+   "end": 38.507,
+   "src_start": 39.407,
+   "src_end": 39.807
+  },
+  {
+   "text": "corruption.",
+   "start": 38.507,
+   "end": 38.907,
+   "src_start": 39.807,
+   "src_end": 40.207
+  },
+  {
+   "text": "At",
+   "start": 39.387,
+   "end": 39.547,
+   "src_start": 40.687,
+   "src_end": 40.847
+  },
+  {
+   "text": "the",
+   "start": 39.547,
+   "end": 39.667,
+   "src_start": 40.847,
+   "src_end": 40.967
+  },
+  {
+   "text": "end",
+   "start": 39.667,
+   "end": 39.867,
+   "src_start": 40.967,
+   "src_end": 41.167
+  },
+  {
+   "text": "of",
+   "start": 39.867,
+   "end": 39.987,
+   "src_start": 41.167,
+   "src_end": 41.287
+  },
+  {
+   "text": "the",
+   "start": 39.987,
+   "end": 40.187,
+   "src_start": 41.287,
+   "src_end": 41.487
+  },
+  {
+   "text": "day,",
+   "start": 40.187,
+   "end": 40.267,
+   "src_start": 41.487,
+   "src_end": 41.567
+  },
+  {
+   "text": "the",
+   "start": 40.947,
+   "end": 41.107,
+   "src_start": 42.247,
+   "src_end": 42.407
+  },
+  {
+   "text": "government",
+   "start": 41.107,
+   "end": 41.667,
+   "src_start": 42.407,
+   "src_end": 42.967
+  },
+  {
+   "text": "serves",
+   "start": 41.667,
+   "end": 41.987,
+   "src_start": 42.967,
+   "src_end": 43.287
+  },
+  {
+   "text": "the",
+   "start": 41.987,
+   "end": 42.187,
+   "src_start": 43.287,
+   "src_end": 43.487
+  },
+  {
+   "text": "people,",
+   "start": 42.187,
+   "end": 42.547,
+   "src_start": 43.487,
+   "src_end": 43.847
+  },
+  {
+   "text": "and",
+   "start": 42.547,
+   "end": 42.707,
+   "src_start": 43.847,
+   "src_end": 44.007
+  },
+  {
+   "text": "we",
+   "start": 42.707,
+   "end": 42.827,
+   "src_start": 44.007,
+   "src_end": 44.127
+  },
+  {
+   "text": "have",
+   "start": 42.827,
+   "end": 42.987,
+   "src_start": 44.127,
+   "src_end": 44.287
+  },
+  {
+   "text": "the",
+   "start": 42.987,
+   "end": 43.107,
+   "src_start": 44.287,
+   "src_end": 44.407
+  },
+  {
+   "text": "right",
+   "start": 43.107,
+   "end": 43.307,
+   "src_start": 44.407,
+   "src_end": 44.607
+  },
+  {
+   "text": "to",
+   "start": 43.307,
+   "end": 43.467,
+   "src_start": 44.607,
+   "src_end": 44.767
+  },
+  {
+   "text": "know",
+   "start": 43.467,
+   "end": 43.747,
+   "src_start": 44.767,
+   "src_end": 45.047
+  },
+  {
+   "text": "how",
+   "start": 43.747,
+   "end": 43.947,
+   "src_start": 45.047,
+   "src_end": 45.247
+  },
+  {
+   "text": "it",
+   "start": 43.947,
+   "end": 44.107,
+   "src_start": 45.247,
+   "src_end": 45.407
+  },
+  {
+   "text": "operates.",
+   "start": 44.107,
+   "end": 44.627,
+   "src_start": 45.407,
+   "src_end": 45.927
+  },
+  {
+   "text": "Thank",
+   "start": 44.94,
+   "end": 45.12,
+   "src_start": 46.44,
+   "src_end": 46.62
+  },
+  {
+   "text": "you!",
+   "start": 45.12,
+   "end": 45.36,
+   "src_start": 46.62,
+   "src_end": 46.86
+  }
+ ]
+}
