@@ -1,0 +1,24 @@
+# your videos and results never get committed
+output/*
+!output/.gitkeep
+
+# environments / caches
+.venv/
+__pycache__/
+*.pyc
+remotion/node_modules/
+remotion/public/clip*.mp4
+remotion/out/
+.cache/
+
+# secrets, cookies
+.env
+*.cookies
+cookies*.txt
+
+# OS / editor
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
